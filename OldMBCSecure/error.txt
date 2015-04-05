@@ -1,0 +1,826 @@
+Time of Error: 3/19/2014 3:13 PM
+URL: https://www.securepaymentportal.com/MBCSecure/MbcPayment.aspx?orderid=21004
+Form: __EVENTTARGET=ccsubmit&__EVENTARGUMENT=&__LASTFOCUS=&__VIEWSTATE=%2fwEPDwUKMTU1NTUyNTkyNA9kFgICBQ9kFgwCAQ8PFgIeBFRleHQFHkRBVkVTIEFWRU5VRSBFTEVNRU5UQVJZIFNDSE9PTGRkAgUPEGRkFgFmZAIJDw8WAh8ABQUyMS4wMGRkAg0PDxYCHwAFBTIxMDA0ZGQCEQ8PFgIfAAUeYmVuZWRpY3RlLmthcnBvdkB3aW5waGFybWEuY29tZGQCGw9kFgICCw8QZGQWAWZkZMnrK9e8mR6vG5KYQydMd7P3E%2bc19Ttc7FrjMwH3svq6&__EVENTVALIDATION=%2fwEdACZhlxJwPYV6d06fDB%2bKrF5ihqsWo2fV3mHJ8HSs0%2fycraPpsKID7Vybv2lXgwwH2Z6lBBbKnKWdwHena9IO6Q%2bJS7LT3JygXhkzplN%2fn8RAvemGYMQe9i8rWw4FzhnYZQbX5MTd7sg1B0keDLYXADutvsBdmgvumGfEfcAEfFYyiOy1n1kujBPlpkXu%2bLuRNs4K7vFThfgSHmXs07hznQULttNFGdu2oKKPVSvWUpGkXBf6rTLFPm8eUj1eQz8AB6eqaObzoNmZWVh3XA%2bmw3ZpcJ%2bHNR6inn47eA%2fLIgr3u8RRz7XszgRtd4V658OpeppTZeZcUro95IK%2bx9h%2bbFhVDX7gr%2bcKzbHvt9qlFmZvzg41XRPEQn0e6EwituguTZOceBbiTujPi2aOG%2bHlAaCXUPHuY4PERP374m70OkW2pbiWmgwBL5nJb6voZUbC0jcSuVxniEbOv%2bzYCXgXp991v0hKOlTZI%2bpXY2kHmgn1Ejrvc6pLAtZ0b8HbmGLSQNsgwKX%2bQsm2iiDDpyDEv0LBecvBV7UWNzOGGoH%2fbumVruIxj39gBpCswCwHn6PnrQRUdGgNCLM9v%2fNUTBW32uKofNUoKn0i%2f7QEhApZqIlOMifDKbLbOrs%2fO0jL8U0GgFWpByRUFI34HADb%2flt75wYd4k%2fy6vzEohPlqDbGeZadUNX8uDEX639RjZN6uAXcWNWGuVNmqZyAe0LH6BNu1SXeYBrsTbHH9h9OOD0e7OnD5iN3gmHAAU6almvx1geSfaSoerpJeveLAS7P7I53B4BDSqtdxn3SCy%2bCeerDPnLbioJ0zJkuPLLThSoX9g%2bakSMJopV0EvUUk4fDdPr4Ld5P&rbpaytype=CC&hfschcode=096078&hfschinvoicenumber=70527&hfpaytype=CC&x_card_num=4346102902147239&x_card_code=091&x_first_name=benedicte&x_last_name=karpov&ddlmonth=01&ddlyear=2017&eo_version=11.0.20.2&eo_style_keys=%2fwFk
+QueryString: orderid=21004
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:27.0) Gecko/20100101 Firefox/27.0
+User IP: 50.174.20.47
+User Host Name: 50.174.20.47
+User is Authenticated: False
+Message: Timeout in IO operation
+Source: MySql.Data
+TargetSite: Void StopTimer()
+StackTrace:    at MySql.Data.MySqlClient.TimedStream.StopTimer()
+   at MySql.Data.MySqlClient.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BufferedStream.Read(Byte[] array, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.ReadFully(Stream stream, Byte[] buffer, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at MbcPayment.DeleteOrder() in E:\wwwroot\securepaymentportal\AuthNetWebService\MBCSecure\MbcPayment.aspx.vb:line 425
+   at MbcPayment.ccsubmit_Click(Object sender, EventArgs e) in E:\wwwroot\securepaymentportal\AuthNetWebService\MBCSecure\MbcPayment.aspx.vb:line 137
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 3/19/2014 3:16 PM
+URL: https://www.securepaymentportal.com/MBCSecure/MbcPayment.aspx?orderid=21006
+Form: __EVENTTARGET=ccsubmit&__EVENTARGUMENT=&__LASTFOCUS=&__VIEWSTATE=%2fwEPDwUKMTU1NTUyNTkyNA9kFgICBQ9kFgwCAQ8PFgIeBFRleHQFHkRBVkVTIEFWRU5VRSBFTEVNRU5UQVJZIFNDSE9PTGRkAgUPEGRkFgFmZAIJDw8WAh8ABQUyMS4wMGRkAg0PDxYCHwAFBTIxMDA2ZGQCEQ8PFgIfAAUUZGF2aWRtYXhpbUB5YWhvby5jb21kZAIbD2QWAgILDxBkZBYBZmRkE1YyBkbJN0xOHEJZ425W7NtugxtKH%2fq3b1yVEqO8kKo%3d&__EVENTVALIDATION=%2fwEdACaMoztjZbwWrWp6TvIcxhirhqsWo2fV3mHJ8HSs0%2fycraPpsKID7Vybv2lXgwwH2Z6lBBbKnKWdwHena9IO6Q%2bJS7LT3JygXhkzplN%2fn8RAvemGYMQe9i8rWw4FzhnYZQbX5MTd7sg1B0keDLYXADutvsBdmgvumGfEfcAEfFYyiOy1n1kujBPlpkXu%2bLuRNs4K7vFThfgSHmXs07hznQULttNFGdu2oKKPVSvWUpGkXBf6rTLFPm8eUj1eQz8AB6eqaObzoNmZWVh3XA%2bmw3ZpcJ%2bHNR6inn47eA%2fLIgr3u8RRz7XszgRtd4V658OpeppTZeZcUro95IK%2bx9h%2bbFhVDX7gr%2bcKzbHvt9qlFmZvzg41XRPEQn0e6EwituguTZOceBbiTujPi2aOG%2bHlAaCXUPHuY4PERP374m70OkW2pbiWmgwBL5nJb6voZUbC0jcSuVxniEbOv%2bzYCXgXp991v0hKOlTZI%2bpXY2kHmgn1Ejrvc6pLAtZ0b8HbmGLSQNsgwKX%2bQsm2iiDDpyDEv0LBecvBV7UWNzOGGoH%2fbumVruIxj39gBpCswCwHn6PnrQRUdGgNCLM9v%2fNUTBW32uKofNUoKn0i%2f7QEhApZqIlOMifDKbLbOrs%2fO0jL8U0GgFWpByRUFI34HADb%2flt75wYd4k%2fy6vzEohPlqDbGeZadUNX8uDEX639RjZN6uAXcWNWGuVNmqZyAe0LH6BNu1SXeYBrsTbHH9h9OOD0e7OnD5iN3gmHAAU6almvx1geSfaSoerpJeveLAS7P7I53B4BDSqtdxn3SCy%2bCeerDPnLbio8L1u70LYrolQCHBsEhtdKzi6bMrQ3OhZIkU7PaoOgj&rbpaytype=CC&hfschcode=096078&hfschinvoicenumber=70527&hfpaytype=CC&x_card_num=4388576053343557&x_card_code=320&x_first_name=David&x_last_name=Lilienstein&ddlmonth=06&ddlyear=2015&eo_version=11.0.20.2&eo_style_keys=%2fwFk
+QueryString: orderid=21006
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36
+User IP: 50.152.177.172
+User Host Name: 50.152.177.172
+User is Authenticated: False
+Message: Timeout in IO operation
+Source: MySql.Data
+TargetSite: Void StopTimer()
+StackTrace:    at MySql.Data.MySqlClient.TimedStream.StopTimer()
+   at MySql.Data.MySqlClient.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BufferedStream.Read(Byte[] array, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.ReadFully(Stream stream, Byte[] buffer, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at MbcPayment.DeleteOrder() in E:\wwwroot\securepaymentportal\AuthNetWebService\MBCSecure\MbcPayment.aspx.vb:line 425
+   at MbcPayment.ccsubmit_Click(Object sender, EventArgs e) in E:\wwwroot\securepaymentportal\AuthNetWebService\MBCSecure\MbcPayment.aspx.vb:line 137
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 3/19/2014 3:33 PM
+URL: https://www.securepaymentportal.com/MBCSecure/MbcPayment.aspx?orderid=21017
+Form: __EVENTTARGET=ccsubmit&__EVENTARGUMENT=&__LASTFOCUS=&__VIEWSTATE=%2fwEPDwUKMTU1NTUyNTkyNA9kFgICBQ9kFgwCAQ8PFgIeBFRleHQFGkNIQVJMRVMgSE9GRk1BTiBFTEVNRU5UQVJZZGQCBQ8QZGQWAWZkAgkPDxYCHwAFBTE2LjAwZGQCDQ8PFgIfAAUFMjEwMTdkZAIRDw8WAh8ABRFhZGhtZWc3QGdtYWlsLmNvbWRkAhsPZBYCAgsPEGRkFgFmZGShZ24%2bC%2fWiEkTchwIBu%2f3JH%2bm3uO%2b0aNeJKk7AJ7SdTw%3d%3d&__EVENTVALIDATION=%2fwEdACYVuAuE8TyGa19mjShintHyhqsWo2fV3mHJ8HSs0%2fycraPpsKID7Vybv2lXgwwH2Z6lBBbKnKWdwHena9IO6Q%2bJS7LT3JygXhkzplN%2fn8RAvemGYMQe9i8rWw4FzhnYZQbX5MTd7sg1B0keDLYXADutvsBdmgvumGfEfcAEfFYyiOy1n1kujBPlpkXu%2bLuRNs4K7vFThfgSHmXs07hznQULttNFGdu2oKKPVSvWUpGkXBf6rTLFPm8eUj1eQz8AB6eqaObzoNmZWVh3XA%2bmw3ZpcJ%2bHNR6inn47eA%2fLIgr3u8RRz7XszgRtd4V658OpeppTZeZcUro95IK%2bx9h%2bbFhVDX7gr%2bcKzbHvt9qlFmZvzg41XRPEQn0e6EwituguTZOceBbiTujPi2aOG%2bHlAaCXUPHuY4PERP374m70OkW2pbiWmgwBL5nJb6voZUbC0jcSuVxniEbOv%2bzYCXgXp991v0hKOlTZI%2bpXY2kHmgn1Ejrvc6pLAtZ0b8HbmGLSQNsgwKX%2bQsm2iiDDpyDEv0LBecvBV7UWNzOGGoH%2fbumVruIxj39gBpCswCwHn6PnrQRUdGgNCLM9v%2fNUTBW32uKofNUoKn0i%2f7QEhApZqIlOMifDKbLbOrs%2fO0jL8U0GgFWpByRUFI34HADb%2flt75wYd4k%2fy6vzEohPlqDbGeZadUNX8uDEX639RjZN6uAXcWNWGuVNmqZyAe0LH6BNu1SXeYBrsTbHH9h9OOD0e7OnD5iN3gmHAAU6almvx1geSfaSoerpJeveLAS7P7I53B4BDSqtdxn3SCy%2bCeerDPnLbiqidpv%2fDN%2fzuCZ6CRo6mTDns72f6Jjq%2b3OqVBYT0EI%2bO&rbpaytype=CC&hfschcode=107283&hfschinvoicenumber=70909&hfpaytype=CC&x_card_num=4705230005313518&x_card_code=074&x_first_name=Katie&x_last_name=Neal&ddlmonth=11&ddlyear=2016&eo_version=11.0.20.2&eo_style_keys=%2fwFk
+QueryString: orderid=21017
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/5.0 (Windows NT 5.1; rv:28.0) Gecko/20100101 Firefox/28.0
+User IP: 97.93.85.232
+User Host Name: 97.93.85.232
+User is Authenticated: False
+Message: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+Source: System
+TargetSite: Int32 Read(Byte[], Int32, Int32)
+StackTrace:    at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+
+
+
+
+Time of Error: 3/19/2014 4:00 PM
+URL: https://www.securepaymentportal.com/MBCSecure/MbcPayment.aspx?orderid=21026
+Form: __EVENTTARGET=ccsubmit&__EVENTARGUMENT=&__LASTFOCUS=&__VIEWSTATE=%2fwEPDwUKMTU1NTUyNTkyNA9kFgICBQ9kFgwCAQ8PFgIeBFRleHQFGE5BUExFUyBFTEVNRU5UQVJZIFNDSE9PTGRkAgUPEGRkFgFmZAIJDw8WAh8ABQUzNi4wMGRkAg0PDxYCHwAFBTIxMDI2ZGQCEQ8PFgIfAAUeYXJhY2VsaV96X21lbmRvbmNhQGhvdG1haWwuY29tZGQCGw9kFgICCw8QZGQWAWZkZB9dYnE7XZkvYG%2bdlbsFFQVCJ%2fNZ7wr4crW82zAS6zJT&__EVENTVALIDATION=%2fwEdACboM5%2bVrH%2f8lf2xu3eZ5A0%2fhqsWo2fV3mHJ8HSs0%2fycraPpsKID7Vybv2lXgwwH2Z6lBBbKnKWdwHena9IO6Q%2bJS7LT3JygXhkzplN%2fn8RAvemGYMQe9i8rWw4FzhnYZQbX5MTd7sg1B0keDLYXADutvsBdmgvumGfEfcAEfFYyiOy1n1kujBPlpkXu%2bLuRNs4K7vFThfgSHmXs07hznQULttNFGdu2oKKPVSvWUpGkXBf6rTLFPm8eUj1eQz8AB6eqaObzoNmZWVh3XA%2bmw3ZpcJ%2bHNR6inn47eA%2fLIgr3u8RRz7XszgRtd4V658OpeppTZeZcUro95IK%2bx9h%2bbFhVDX7gr%2bcKzbHvt9qlFmZvzg41XRPEQn0e6EwituguTZOceBbiTujPi2aOG%2bHlAaCXUPHuY4PERP374m70OkW2pbiWmgwBL5nJb6voZUbC0jcSuVxniEbOv%2bzYCXgXp991v0hKOlTZI%2bpXY2kHmgn1Ejrvc6pLAtZ0b8HbmGLSQNsgwKX%2bQsm2iiDDpyDEv0LBecvBV7UWNzOGGoH%2fbumVruIxj39gBpCswCwHn6PnrQRUdGgNCLM9v%2fNUTBW32uKofNUoKn0i%2f7QEhApZqIlOMifDKbLbOrs%2fO0jL8U0GgFWpByRUFI34HADb%2flt75wYd4k%2fy6vzEohPlqDbGeZadUNX8uDEX639RjZN6uAXcWNWGuVNmqZyAe0LH6BNu1SXeYBrsTbHH9h9OOD0e7OnD5iN3gmHAAU6almvx1geSfaSoerpJeveLAS7P7I53B4BDSqtdxn3SCy%2bCeerDPnLbir8FcgF7n%2flvrVFfzUAO%2bs61FH5UGbqWfzcesJ35Ze3c&rbpaytype=CC&hfschcode=014441&hfschinvoicenumber=69811&hfpaytype=CC&x_card_num=5491237312521118&x_card_code=809&x_first_name=A&x_last_name=Zuniga-Mendonca&ddlmonth=01&ddlyear=2016&eo_version=11.0.20.2&eo_style_keys=%2fwFk
+QueryString: orderid=21026
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+User IP: 95.241.137.34
+User Host Name: 95.241.137.34
+User is Authenticated: False
+Message: Timeout in IO operation
+Source: MySql.Data
+TargetSite: Void StopTimer()
+StackTrace:    at MySql.Data.MySqlClient.TimedStream.StopTimer()
+   at MySql.Data.MySqlClient.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BufferedStream.Read(Byte[] array, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.ReadFully(Stream stream, Byte[] buffer, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at MbcPayment.DeleteOrder() in E:\wwwroot\securepaymentportal\AuthNetWebService\MBCSecure\MbcPayment.aspx.vb:line 425
+   at MbcPayment.ccsubmit_Click(Object sender, EventArgs e) in E:\wwwroot\securepaymentportal\AuthNetWebService\MBCSecure\MbcPayment.aspx.vb:line 137
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 3/19/2014 4:00 PM
+URL: https://www.securepaymentportal.com/MBCSecure/MbcPayment.aspx?orderid=21026
+Form: __EVENTTARGET=MsgBox1&__EVENTARGUMENT=no&__LASTFOCUS=&__VIEWSTATE=%2fwEPDwUKMTU1NTUyNTkyNA9kFgICBQ9kFg4CAQ8PFgIeBFRleHQFGE5BUExFUyBFTEVNRU5UQVJZIFNDSE9PTGRkAgUPEGRkFgFmZAIJDw8WAh8ABQUzNi4wMGRkAg0PDxYCHwAFBTIxMDI2ZGQCEQ8PFgIfAAUeYXJhY2VsaV96X21lbmRvbmNhQGhvdG1haWwuY29tZGQCGw9kFgICCw8QZGQWAWZkAiEPD2QPZDwrAA4BAAUMTkFJQkFBQUFBQUE9ZGSkjxw3qksceH0JfSi4UvRoF%2f5e7XzJg7%2bb6F%2fkURmcWw%3d%3d&__EVENTVALIDATION=%2fwEdACaKEgRvl3aZJfvRyrUQ5BnshqsWo2fV3mHJ8HSs0%2fycraPpsKID7Vybv2lXgwwH2Z6lBBbKnKWdwHena9IO6Q%2bJS7LT3JygXhkzplN%2fn8RAvemGYMQe9i8rWw4FzhnYZQbX5MTd7sg1B0keDLYXADutvsBdmgvumGfEfcAEfFYyiOy1n1kujBPlpkXu%2bLuRNs4K7vFThfgSHmXs07hznQULttNFGdu2oKKPVSvWUpGkXBf6rTLFPm8eUj1eQz8AB6eqaObzoNmZWVh3XA%2bmw3ZpcJ%2bHNR6inn47eA%2fLIgr3u8RRz7XszgRtd4V658OpeppTZeZcUro95IK%2bx9h%2bbFhVDX7gr%2bcKzbHvt9qlFmZvzg41XRPEQn0e6EwituguTZOceBbiTujPi2aOG%2bHlAaCXUPHuY4PERP374m70OkW2pbiWmgwBL5nJb6voZUbC0jcSuVxniEbOv%2bzYCXgXp991v0hKOlTZI%2bpXY2kHmgn1Ejrvc6pLAtZ0b8HbmGLSQNsgwKX%2bQsm2iiDDpyDEv0LBecvBV7UWNzOGGoH%2fbumVruIxj39gBpCswCwHn6PnrQRUdGgNCLM9v%2fNUTBW32uKofNUoKn0i%2f7QEhApZqIlOMifDKbLbOrs%2fO0jL8U0GgFWpByRUFI34HADb%2flt75wYd4k%2fy6vzEohPlqDbGeZadUNX8uDEX639RjZN6uAXcWNWGuVNmqZyAe0LH6BNu1SXeYBrsTbHH9h9OOD0e7OnD5iN3gmHAAU6almvx1geSfaSoerpJeveLAS7P7I53B4BDSqtdxn3SCy%2bCeerDPnLbigzHbQPC%2b9niRNlmUMCI70qMs7IpCj4LtX%2fSCTibKhG%2b&rbpaytype=CC&hfschcode=014441&hfschinvoicenumber=69811&hfpaytype=CC&x_card_num=5491237312521118&x_card_code=809&x_first_name=A&x_last_name=Zuniga-Mendonca&ddlmonth=01&ddlyear=2016&eo_version=11.0.20.2&eo_style_keys=%2fwFk
+QueryString: orderid=21026
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+User IP: 95.241.137.34
+User Host Name: 95.241.137.34
+User is Authenticated: False
+Message: Timeout in IO operation
+Source: MySql.Data
+TargetSite: Void StopTimer()
+StackTrace:    at MySql.Data.MySqlClient.TimedStream.StopTimer()
+   at MySql.Data.MySqlClient.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BufferedStream.Read(Byte[] array, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.ReadFully(Stream stream, Byte[] buffer, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at MbcPayment.DeleteOrder() in E:\wwwroot\securepaymentportal\AuthNetWebService\MBCSecure\MbcPayment.aspx.vb:line 425
+   at MbcPayment.MsgBox1_ButtonClick(Object sender, CommandEventArgs e) in E:\wwwroot\securepaymentportal\AuthNetWebService\MBCSecure\MbcPayment.aspx.vb:line 449
+   at EO.Web.MsgBox.b(String A_0)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 3/19/2014 4:01 PM
+URL: https://www.securepaymentportal.com/MBCSecure/MbcPayment.aspx?orderid=21026
+Form: __EVENTTARGET=MsgBox1&__EVENTARGUMENT=no&__LASTFOCUS=&__VIEWSTATE=%2fwEPDwUKMTU1NTUyNTkyNA9kFgICBQ9kFg4CAQ8PFgIeBFRleHQFGE5BUExFUyBFTEVNRU5UQVJZIFNDSE9PTGRkAgUPEGRkFgFmZAIJDw8WAh8ABQUzNi4wMGRkAg0PDxYCHwAFBTIxMDI2ZGQCEQ8PFgIfAAUeYXJhY2VsaV96X21lbmRvbmNhQGhvdG1haWwuY29tZGQCGw9kFgICCw8QZGQWAWZkAiEPD2QPZDwrAA4BAAUMTkFJQkFBQUFBQUE9ZGSkjxw3qksceH0JfSi4UvRoF%2f5e7XzJg7%2bb6F%2fkURmcWw%3d%3d&__EVENTVALIDATION=%2fwEdACaKEgRvl3aZJfvRyrUQ5BnshqsWo2fV3mHJ8HSs0%2fycraPpsKID7Vybv2lXgwwH2Z6lBBbKnKWdwHena9IO6Q%2bJS7LT3JygXhkzplN%2fn8RAvemGYMQe9i8rWw4FzhnYZQbX5MTd7sg1B0keDLYXADutvsBdmgvumGfEfcAEfFYyiOy1n1kujBPlpkXu%2bLuRNs4K7vFThfgSHmXs07hznQULttNFGdu2oKKPVSvWUpGkXBf6rTLFPm8eUj1eQz8AB6eqaObzoNmZWVh3XA%2bmw3ZpcJ%2bHNR6inn47eA%2fLIgr3u8RRz7XszgRtd4V658OpeppTZeZcUro95IK%2bx9h%2bbFhVDX7gr%2bcKzbHvt9qlFmZvzg41XRPEQn0e6EwituguTZOceBbiTujPi2aOG%2bHlAaCXUPHuY4PERP374m70OkW2pbiWmgwBL5nJb6voZUbC0jcSuVxniEbOv%2bzYCXgXp991v0hKOlTZI%2bpXY2kHmgn1Ejrvc6pLAtZ0b8HbmGLSQNsgwKX%2bQsm2iiDDpyDEv0LBecvBV7UWNzOGGoH%2fbumVruIxj39gBpCswCwHn6PnrQRUdGgNCLM9v%2fNUTBW32uKofNUoKn0i%2f7QEhApZqIlOMifDKbLbOrs%2fO0jL8U0GgFWpByRUFI34HADb%2flt75wYd4k%2fy6vzEohPlqDbGeZadUNX8uDEX639RjZN6uAXcWNWGuVNmqZyAe0LH6BNu1SXeYBrsTbHH9h9OOD0e7OnD5iN3gmHAAU6almvx1geSfaSoerpJeveLAS7P7I53B4BDSqtdxn3SCy%2bCeerDPnLbigzHbQPC%2b9niRNlmUMCI70qMs7IpCj4LtX%2fSCTibKhG%2b&rbpaytype=CC&hfschcode=014441&hfschinvoicenumber=69811&hfpaytype=CC&x_card_num=5491237312521118&x_card_code=809&x_first_name=A&x_last_name=Zuniga-Mendonca&ddlmonth=01&ddlyear=2016&eo_version=11.0.20.2&eo_style_keys=%2fwFk
+QueryString: orderid=21026
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+User IP: 95.241.137.34
+User Host Name: 95.241.137.34
+User is Authenticated: False
+Message: Timeout in IO operation
+Source: MySql.Data
+TargetSite: Void StopTimer()
+StackTrace:    at MySql.Data.MySqlClient.TimedStream.StopTimer()
+   at MySql.Data.MySqlClient.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BufferedStream.Read(Byte[] array, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.ReadFully(Stream stream, Byte[] buffer, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at MbcPayment.DeleteOrder() in E:\wwwroot\securepaymentportal\AuthNetWebService\MBCSecure\MbcPayment.aspx.vb:line 425
+   at MbcPayment.MsgBox1_ButtonClick(Object sender, CommandEventArgs e) in E:\wwwroot\securepaymentportal\AuthNetWebService\MBCSecure\MbcPayment.aspx.vb:line 449
+   at EO.Web.MsgBox.b(String A_0)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 3/19/2014 4:50 PM
+URL: https://www.securepaymentportal.com/MBCSecure/SchoolPay.aspx?schname=UCP+BAILES+CAMPUS&schcode=136831
+Form: __EVENTTARGET=ccsubmit&__EVENTARGUMENT=&__LASTFOCUS=&__VIEWSTATE=%2fwEPDwUJMTk3NzUxMzY2D2QWBAIDDxYCHgVzdHlsZQURdG9wOjYwJTtsZWZ0OjU1JTtkAgUPZBYGAgEPDxYCHgRUZXh0BRFVQ1AgQkFJTEVTIENBTVBVU2RkAgUPEGRkFgFmZAIfD2QWAgILDxBkZBYBZmRkUHbDaf7JJmtJAGuQLt3z3wmZAptepVPKFWtBbQJ5cms%3d&__EVENTVALIDATION=%2fwEdACcfI8klskY48Wdm2clQmmM%2fhqsWo2fV3mHJ8HSs0%2fycraPpsKID7Vybv2lXgwwH2Z6lBBbKnKWdwHena9IO6Q%2bJfL6FQgGvg5JETsvTJizZtsLEB2UoLWpNBnJFX99K9wdLstPcnKBeGTOmU3%2bfxEC91%2bTE3e7INQdJHgy2FwA7rb7AXZoL7phnxH3ABHxWMojstZ9ZLowT5aZF7vi7kTbOCu7xU4X4Eh5l7NO4c50FC7bTRRnbtqCij1Ur1lKRpFwX%2bq0yxT5vHlI9XkM%2fAAenqmjm86DZmVlYd1wPpsN2aXCfhzUeop5%2bO3gPyyIK97vEUc%2b17M4EbXeFeufDqXqaU2XmXFK6PeSCvsfYfmxYVQ1%2b4K%2fnCs2x77fapRZmb84ONV0TxEJ9HuhMIrboLk2TnHgW4k7oz4tmjhvh5QGgl1Dx7mODxET9%2b%2bJu9DpFtqW4lpoMAS%2bZyW%2br6GVGwtI3ErlcZ4hGzr%2fs2Al4F6ffdb9ISjpU2SPqV2NpB5oJ9RI673OqSwLWdG%2fB25hi0kDbIMCl%2fkLJtoogw6cgxL9CwXnLwVe1FjczhhqB%2f27pla7iMY9%2fYAaQrMAsB5%2bj560EVHRoDQizPb%2fzVEwVt9riqHzVKCp9Iv%2b0BIQKWaiJTjInwymy2zq7PztIy%2fFNBoBVqQckVBSN%2bBwA2%2f5be%2bcGHeJP8ur8xKIT5ag2xnmWnVDV%2fLgxF%2bt%2fUY2TergF3FjVhrlTZqmcgHtCx%2bgTbtUl3mAa7E2xx%2fYfTjg9Huzpw%2bYjd4JhwAFOmpZr8dYHkn2kqHq6SXr3iwEuz%2byOdweAQ0qrXcZ90gsvgnnqwz5y24pnCo%2bVG190VLbjPNbNKK19P7nK7b29CKlp0BjG3fOvuQ%3d%3d&rbpaytype=CC&txtamount=2000.00&txtemail=jessical.taormina%40gmail.com&hfschcode=136831&hfpaytype=CC&x_card_num=379716709651008&x_card_code=6488&x_first_name=Jessica&x_last_name=Taormina&ddlmonth=02&ddlyear=2016&eo_version=11.0.20.2&eo_style_keys=%2fwFk
+QueryString: schname=UCP+BAILES+CAMPUS&schcode=136831
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.74.9 (KHTML, like Gecko) Version/7.0.2 Safari/537.74.9
+User IP: 205.204.20.84
+User Host Name: 205.204.20.84
+User is Authenticated: False
+Message: Timeout in IO operation
+Source: MySql.Data
+TargetSite: Void StopTimer()
+StackTrace:    at MySql.Data.MySqlClient.TimedStream.StopTimer()
+   at MySql.Data.MySqlClient.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BufferedStream.Read(Byte[] array, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.ReadFully(Stream stream, Byte[] buffer, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at SchoolPay.UpdatePayment(String transid, String authcode, String ccnum) in E:\wwwroot\securepaymentportal\AuthNetWebService\MBCSecure\SchoolPay.aspx.vb:line 148
+   at SchoolPay.ccsubmit_Click(Object sender, EventArgs e) in E:\wwwroot\securepaymentportal\AuthNetWebService\MBCSecure\SchoolPay.aspx.vb:line 112
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 3/19/2014 4:51 PM
+URL: https://www.securepaymentportal.com/MBCSecure/SchoolPay.aspx?schname=UCP+BAILES+CAMPUS&schcode=136831
+Form: __EVENTTARGET=ccsubmit&__EVENTARGUMENT=&__LASTFOCUS=&__VIEWSTATE=%2fwEPDwUJMTk3NzUxMzY2D2QWBAIDDxYCHgVzdHlsZQURdG9wOjYwJTtsZWZ0OjU1JTtkAgUPZBYGAgEPDxYCHgRUZXh0BRFVQ1AgQkFJTEVTIENBTVBVU2RkAgUPEGRkFgFmZAIfD2QWAgILDxBkZBYBZmRkUHbDaf7JJmtJAGuQLt3z3wmZAptepVPKFWtBbQJ5cms%3d&__EVENTVALIDATION=%2fwEdACcfI8klskY48Wdm2clQmmM%2fhqsWo2fV3mHJ8HSs0%2fycraPpsKID7Vybv2lXgwwH2Z6lBBbKnKWdwHena9IO6Q%2bJfL6FQgGvg5JETsvTJizZtsLEB2UoLWpNBnJFX99K9wdLstPcnKBeGTOmU3%2bfxEC91%2bTE3e7INQdJHgy2FwA7rb7AXZoL7phnxH3ABHxWMojstZ9ZLowT5aZF7vi7kTbOCu7xU4X4Eh5l7NO4c50FC7bTRRnbtqCij1Ur1lKRpFwX%2bq0yxT5vHlI9XkM%2fAAenqmjm86DZmVlYd1wPpsN2aXCfhzUeop5%2bO3gPyyIK97vEUc%2b17M4EbXeFeufDqXqaU2XmXFK6PeSCvsfYfmxYVQ1%2b4K%2fnCs2x77fapRZmb84ONV0TxEJ9HuhMIrboLk2TnHgW4k7oz4tmjhvh5QGgl1Dx7mODxET9%2b%2bJu9DpFtqW4lpoMAS%2bZyW%2br6GVGwtI3ErlcZ4hGzr%2fs2Al4F6ffdb9ISjpU2SPqV2NpB5oJ9RI673OqSwLWdG%2fB25hi0kDbIMCl%2fkLJtoogw6cgxL9CwXnLwVe1FjczhhqB%2f27pla7iMY9%2fYAaQrMAsB5%2bj560EVHRoDQizPb%2fzVEwVt9riqHzVKCp9Iv%2b0BIQKWaiJTjInwymy2zq7PztIy%2fFNBoBVqQckVBSN%2bBwA2%2f5be%2bcGHeJP8ur8xKIT5ag2xnmWnVDV%2fLgxF%2bt%2fUY2TergF3FjVhrlTZqmcgHtCx%2bgTbtUl3mAa7E2xx%2fYfTjg9Huzpw%2bYjd4JhwAFOmpZr8dYHkn2kqHq6SXr3iwEuz%2byOdweAQ0qrXcZ90gsvgnnqwz5y24pnCo%2bVG190VLbjPNbNKK19P7nK7b29CKlp0BjG3fOvuQ%3d%3d&rbpaytype=CC&txtamount=27.25&txtemail=Jtaormina%40ucpcfl.org&hfschcode=136831&hfpaytype=CC&x_card_num=4430480002149884&x_card_code=778&x_first_name=Jessica&x_last_name=Taormina&ddlmonth=10&ddlyear=2015&eo_version=11.0.20.2&eo_style_keys=%2fwFk
+QueryString: schname=UCP+BAILES+CAMPUS&schcode=136831
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.74.9 (KHTML, like Gecko) Version/7.0.2 Safari/537.74.9
+User IP: 205.204.20.84
+User Host Name: 205.204.20.84
+User is Authenticated: False
+Message: Timeout in IO operation
+Source: MySql.Data
+TargetSite: Void StopTimer()
+StackTrace:    at MySql.Data.MySqlClient.TimedStream.StopTimer()
+   at MySql.Data.MySqlClient.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at System.IO.BufferedStream.Read(Byte[] array, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.ReadFully(Stream stream, Byte[] buffer, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.LoadPacket()
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at SchoolPay.UpdatePayment(String transid, String authcode, String ccnum) in E:\wwwroot\securepaymentportal\AuthNetWebService\MBCSecure\SchoolPay.aspx.vb:line 148
+   at SchoolPay.ccsubmit_Click(Object sender, EventArgs e) in E:\wwwroot\securepaymentportal\AuthNetWebService\MBCSecure\SchoolPay.aspx.vb:line 112
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 3/23/2014 12:30 AM
+URL: https://www.securepaymentportal.com/MBCSecure/MbcPayment.aspx?orderid=22478
+Form: __EVENTTARGET=ccsubmit&__EVENTARGUMENT=&__LASTFOCUS=&__VIEWSTATE=%2fwEPDwUKMTU1NTUyNTkyNA9kFgICBQ9kFgwCAQ8PFgIeBFRleHQFGFNFQUNPQVNUIENIQVJURVIgQUNBREVNWWRkAgUPEGRkFgFmZAIJDw8WAh8ABQUyNi4wMGRkAg0PDxYCHwAFBTIyNDc4ZGQCEQ8PFgIfAAUTc2hlbGVhbjI1QGdtYWlsLmNvbWRkAhsPZBYCAgsPEGRkFgFmZGQJ1wGSKFBVDmW5TPYDOtlMbG%2fjyRKv5e3GySN4YRAoGw%3d%3d&__EVENTVALIDATION=%2fwEdACYeDfGmFI%2fU0ioVYUb6SxC4hqsWo2fV3mHJ8HSs0%2fycraPpsKID7Vybv2lXgwwH2Z6lBBbKnKWdwHena9IO6Q%2bJS7LT3JygXhkzplN%2fn8RAvemGYMQe9i8rWw4FzhnYZQbX5MTd7sg1B0keDLYXADutvsBdmgvumGfEfcAEfFYyiOy1n1kujBPlpkXu%2bLuRNs4K7vFThfgSHmXs07hznQULttNFGdu2oKKPVSvWUpGkXBf6rTLFPm8eUj1eQz8AB6eqaObzoNmZWVh3XA%2bmw3ZpcJ%2bHNR6inn47eA%2fLIgr3u8RRz7XszgRtd4V658OpeppTZeZcUro95IK%2bx9h%2bbFhVDX7gr%2bcKzbHvt9qlFmZvzg41XRPEQn0e6EwituguTZOceBbiTujPi2aOG%2bHlAaCXUPHuY4PERP374m70OkW2pbiWmgwBL5nJb6voZUbC0jcSuVxniEbOv%2bzYCXgXp991v0hKOlTZI%2bpXY2kHmgn1Ejrvc6pLAtZ0b8HbmGLSQNsgwKX%2bQsm2iiDDpyDEv0LBecvBV7UWNzOGGoH%2fbumVruIxj39gBpCswCwHn6PnrQRUdGgNCLM9v%2fNUTBW32uKofNUoKn0i%2f7QEhApZqIlOMifDKbLbOrs%2fO0jL8U0GgFWpByRUFI34HADb%2flt75wYd4k%2fy6vzEohPlqDbGeZadUNX8uDEX639RjZN6uAXcWNWGuVNmqZyAe0LH6BNu1SXeYBrsTbHH9h9OOD0e7OnD5iN3gmHAAU6almvx1geSfaSoerpJeveLAS7P7I53B4BDSqtdxn3SCy%2bCeerDPnLbiry4E62xbea74%2bLAdsIRez2Lf7AtROA13gC%2f%2bEF8q2il&rbpaytype=CC&hfschcode=082936&hfschinvoicenumber=71642&hfpaytype=CC&x_card_num=5107746841145377&x_card_code=496&x_first_name=Shelean&x_last_name=Encalade&ddlmonth=10&ddlyear=2014&eo_version=11.0.20.2&eo_style_keys=%2fwFk
+QueryString: orderid=22478
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; Touch; MALNJS; rv:11.0) like Gecko
+User IP: 184.77.47.237
+User Host Name: 184.77.47.237
+User is Authenticated: False
+Message: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 64.94.118.33:443
+Source: System
+TargetSite: Void DoConnect(System.Net.EndPoint, System.Net.SocketAddress)
+StackTrace:    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+
+
+
+
+Time of Error: 3/23/2014 12:31 AM
+URL: https://www.securepaymentportal.com/MBCSecure/MbcPayment.aspx?orderid=22478
+Form: __EVENTTARGET=ccsubmit&__EVENTARGUMENT=&__LASTFOCUS=&__VIEWSTATE=%2fwEPDwUKMTU1NTUyNTkyNA9kFgICBQ9kFgwCAQ8PFgIeBFRleHQFGFNFQUNPQVNUIENIQVJURVIgQUNBREVNWWRkAgUPEGRkFgFmZAIJDw8WAh8ABQUyNi4wMGRkAg0PDxYCHwAFBTIyNDc4ZGQCEQ8PFgIfAAUTc2hlbGVhbjI1QGdtYWlsLmNvbWRkAhsPZBYCAgsPEGRkFgFmZGQJ1wGSKFBVDmW5TPYDOtlMbG%2fjyRKv5e3GySN4YRAoGw%3d%3d&__EVENTVALIDATION=%2fwEdACYeDfGmFI%2fU0ioVYUb6SxC4hqsWo2fV3mHJ8HSs0%2fycraPpsKID7Vybv2lXgwwH2Z6lBBbKnKWdwHena9IO6Q%2bJS7LT3JygXhkzplN%2fn8RAvemGYMQe9i8rWw4FzhnYZQbX5MTd7sg1B0keDLYXADutvsBdmgvumGfEfcAEfFYyiOy1n1kujBPlpkXu%2bLuRNs4K7vFThfgSHmXs07hznQULttNFGdu2oKKPVSvWUpGkXBf6rTLFPm8eUj1eQz8AB6eqaObzoNmZWVh3XA%2bmw3ZpcJ%2bHNR6inn47eA%2fLIgr3u8RRz7XszgRtd4V658OpeppTZeZcUro95IK%2bx9h%2bbFhVDX7gr%2bcKzbHvt9qlFmZvzg41XRPEQn0e6EwituguTZOceBbiTujPi2aOG%2bHlAaCXUPHuY4PERP374m70OkW2pbiWmgwBL5nJb6voZUbC0jcSuVxniEbOv%2bzYCXgXp991v0hKOlTZI%2bpXY2kHmgn1Ejrvc6pLAtZ0b8HbmGLSQNsgwKX%2bQsm2iiDDpyDEv0LBecvBV7UWNzOGGoH%2fbumVruIxj39gBpCswCwHn6PnrQRUdGgNCLM9v%2fNUTBW32uKofNUoKn0i%2f7QEhApZqIlOMifDKbLbOrs%2fO0jL8U0GgFWpByRUFI34HADb%2flt75wYd4k%2fy6vzEohPlqDbGeZadUNX8uDEX639RjZN6uAXcWNWGuVNmqZyAe0LH6BNu1SXeYBrsTbHH9h9OOD0e7OnD5iN3gmHAAU6almvx1geSfaSoerpJeveLAS7P7I53B4BDSqtdxn3SCy%2bCeerDPnLbiry4E62xbea74%2bLAdsIRez2Lf7AtROA13gC%2f%2bEF8q2il&rbpaytype=CC&hfschcode=082936&hfschinvoicenumber=71642&hfpaytype=CC&x_card_num=5107746841145377&x_card_code=496&x_first_name=Shelean&x_last_name=Encalade&ddlmonth=10&ddlyear=2014&eo_version=11.0.20.2&eo_style_keys=%2fwFk
+QueryString: orderid=22478
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; Touch; MALNJS; rv:11.0) like Gecko
+User IP: 184.77.47.237
+User Host Name: 184.77.47.237
+User is Authenticated: False
+Message: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 64.94.118.33:443
+Source: System
+TargetSite: Void DoConnect(System.Net.EndPoint, System.Net.SocketAddress)
+StackTrace:    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+
+
+
+
+Time of Error: 3/23/2014 12:33 AM
+URL: https://www.securepaymentportal.com/MBCSecure/MbcPayment.aspx?orderid=22478
+Form: __EVENTTARGET=ccsubmit&__EVENTARGUMENT=&__LASTFOCUS=&__VIEWSTATE=%2fwEPDwUKMTU1NTUyNTkyNA9kFgICBQ9kFgwCAQ8PFgIeBFRleHQFGFNFQUNPQVNUIENIQVJURVIgQUNBREVNWWRkAgUPEGRkFgFmZAIJDw8WAh8ABQUyNi4wMGRkAg0PDxYCHwAFBTIyNDc4ZGQCEQ8PFgIfAAUTc2hlbGVhbjI1QGdtYWlsLmNvbWRkAhsPZBYCAgsPEGRkFgFmZGQJ1wGSKFBVDmW5TPYDOtlMbG%2fjyRKv5e3GySN4YRAoGw%3d%3d&__EVENTVALIDATION=%2fwEdACYeDfGmFI%2fU0ioVYUb6SxC4hqsWo2fV3mHJ8HSs0%2fycraPpsKID7Vybv2lXgwwH2Z6lBBbKnKWdwHena9IO6Q%2bJS7LT3JygXhkzplN%2fn8RAvemGYMQe9i8rWw4FzhnYZQbX5MTd7sg1B0keDLYXADutvsBdmgvumGfEfcAEfFYyiOy1n1kujBPlpkXu%2bLuRNs4K7vFThfgSHmXs07hznQULttNFGdu2oKKPVSvWUpGkXBf6rTLFPm8eUj1eQz8AB6eqaObzoNmZWVh3XA%2bmw3ZpcJ%2bHNR6inn47eA%2fLIgr3u8RRz7XszgRtd4V658OpeppTZeZcUro95IK%2bx9h%2bbFhVDX7gr%2bcKzbHvt9qlFmZvzg41XRPEQn0e6EwituguTZOceBbiTujPi2aOG%2bHlAaCXUPHuY4PERP374m70OkW2pbiWmgwBL5nJb6voZUbC0jcSuVxniEbOv%2bzYCXgXp991v0hKOlTZI%2bpXY2kHmgn1Ejrvc6pLAtZ0b8HbmGLSQNsgwKX%2bQsm2iiDDpyDEv0LBecvBV7UWNzOGGoH%2fbumVruIxj39gBpCswCwHn6PnrQRUdGgNCLM9v%2fNUTBW32uKofNUoKn0i%2f7QEhApZqIlOMifDKbLbOrs%2fO0jL8U0GgFWpByRUFI34HADb%2flt75wYd4k%2fy6vzEohPlqDbGeZadUNX8uDEX639RjZN6uAXcWNWGuVNmqZyAe0LH6BNu1SXeYBrsTbHH9h9OOD0e7OnD5iN3gmHAAU6almvx1geSfaSoerpJeveLAS7P7I53B4BDSqtdxn3SCy%2bCeerDPnLbiry4E62xbea74%2bLAdsIRez2Lf7AtROA13gC%2f%2bEF8q2il&rbpaytype=CC&hfschcode=082936&hfschinvoicenumber=71642&hfpaytype=CC&x_card_num=5107746841145377&x_card_code=496&x_first_name=Shelean&x_last_name=Encalade&ddlmonth=10&ddlyear=2018&eo_version=11.0.20.2&eo_style_keys=%2fwFk
+QueryString: orderid=22478
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; Touch; MALNJS; rv:11.0) like Gecko
+User IP: 184.77.47.237
+User Host Name: 184.77.47.237
+User is Authenticated: False
+Message: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 64.94.118.33:443
+Source: System
+TargetSite: Void DoConnect(System.Net.EndPoint, System.Net.SocketAddress)
+StackTrace:    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+
+
+
+
+Time of Error: 3/23/2014 12:34 AM
+URL: https://www.securepaymentportal.com/MBCSecure/MbcPayment.aspx?orderid=22478
+Form: __EVENTTARGET=ccsubmit&__EVENTARGUMENT=&__LASTFOCUS=&__VIEWSTATE=%2fwEPDwUKMTU1NTUyNTkyNA9kFgICBQ9kFgwCAQ8PFgIeBFRleHQFGFNFQUNPQVNUIENIQVJURVIgQUNBREVNWWRkAgUPEGRkFgFmZAIJDw8WAh8ABQUyNi4wMGRkAg0PDxYCHwAFBTIyNDc4ZGQCEQ8PFgIfAAUTc2hlbGVhbjI1QGdtYWlsLmNvbWRkAhsPZBYCAgsPEGRkFgFmZGQJ1wGSKFBVDmW5TPYDOtlMbG%2fjyRKv5e3GySN4YRAoGw%3d%3d&__EVENTVALIDATION=%2fwEdACYeDfGmFI%2fU0ioVYUb6SxC4hqsWo2fV3mHJ8HSs0%2fycraPpsKID7Vybv2lXgwwH2Z6lBBbKnKWdwHena9IO6Q%2bJS7LT3JygXhkzplN%2fn8RAvemGYMQe9i8rWw4FzhnYZQbX5MTd7sg1B0keDLYXADutvsBdmgvumGfEfcAEfFYyiOy1n1kujBPlpkXu%2bLuRNs4K7vFThfgSHmXs07hznQULttNFGdu2oKKPVSvWUpGkXBf6rTLFPm8eUj1eQz8AB6eqaObzoNmZWVh3XA%2bmw3ZpcJ%2bHNR6inn47eA%2fLIgr3u8RRz7XszgRtd4V658OpeppTZeZcUro95IK%2bx9h%2bbFhVDX7gr%2bcKzbHvt9qlFmZvzg41XRPEQn0e6EwituguTZOceBbiTujPi2aOG%2bHlAaCXUPHuY4PERP374m70OkW2pbiWmgwBL5nJb6voZUbC0jcSuVxniEbOv%2bzYCXgXp991v0hKOlTZI%2bpXY2kHmgn1Ejrvc6pLAtZ0b8HbmGLSQNsgwKX%2bQsm2iiDDpyDEv0LBecvBV7UWNzOGGoH%2fbumVruIxj39gBpCswCwHn6PnrQRUdGgNCLM9v%2fNUTBW32uKofNUoKn0i%2f7QEhApZqIlOMifDKbLbOrs%2fO0jL8U0GgFWpByRUFI34HADb%2flt75wYd4k%2fy6vzEohPlqDbGeZadUNX8uDEX639RjZN6uAXcWNWGuVNmqZyAe0LH6BNu1SXeYBrsTbHH9h9OOD0e7OnD5iN3gmHAAU6almvx1geSfaSoerpJeveLAS7P7I53B4BDSqtdxn3SCy%2bCeerDPnLbiry4E62xbea74%2bLAdsIRez2Lf7AtROA13gC%2f%2bEF8q2il&rbpaytype=CC&hfschcode=082936&hfschinvoicenumber=71642&hfpaytype=CC&x_card_num=5107746841145377&x_card_code=496&x_first_name=Shelean&x_last_name=Encalade&ddlmonth=10&ddlyear=2018&eo_version=11.0.20.2&eo_style_keys=%2fwFk
+QueryString: orderid=22478
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64; Trident/7.0; Touch; MALNJS; rv:11.0) like Gecko
+User IP: 184.77.47.237
+User Host Name: 184.77.47.237
+User is Authenticated: False
+Message: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 64.94.118.33:443
+Source: System
+TargetSite: Void DoConnect(System.Net.EndPoint, System.Net.SocketAddress)
+StackTrace:    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+
+
+
+
+Time of Error: 3/24/2014 10:32 AM
+URL: https://www.securepaymentportal.com/MBCSecure/receipt.aspx?orderid=22716
+Form: 
+QueryString: orderid=22716
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.74.9 (KHTML, like Gecko) Version/7.0.2 Safari/537.74.9
+User IP: 99.22.14.20
+User Host Name: 99.22.14.20
+User is Authenticated: False
+Message: Value cannot be null.
+Parameter name: address
+Source: System
+TargetSite: Void .ctor(System.String, System.String, System.Text.Encoding)
+StackTrace:    at System.Net.Mail.MailAddress..ctor(String address, String displayName, Encoding displayNameEncoding)
+   at receipt.CSReceipt() in E:\wwwroot\securepaymentportal\AuthNetWebService\MBCSecure\Receipt.aspx.vb:line 196
+   at receipt.Page_Load(Object sender, EventArgs e) in E:\wwwroot\securepaymentportal\AuthNetWebService\MBCSecure\Receipt.aspx.vb:line 288
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 3/24/2014 10:38 AM
+URL: https://www.securepaymentportal.com/MBCSecure/receipt.aspx?orderid=22715
+Form: 
+QueryString: orderid=22715
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36
+User IP: 129.107.109.203
+User Host Name: 129.107.109.203
+User is Authenticated: False
+Message: Value cannot be null.
+Parameter name: address
+Source: System
+TargetSite: Void .ctor(System.String, System.String, System.Text.Encoding)
+StackTrace:    at System.Net.Mail.MailAddress..ctor(String address, String displayName, Encoding displayNameEncoding)
+   at receipt.CSReceipt() in E:\wwwroot\securepaymentportal\AuthNetWebService\MBCSecure\Receipt.aspx.vb:line 196
+   at receipt.Page_Load(Object sender, EventArgs e) in E:\wwwroot\securepaymentportal\AuthNetWebService\MBCSecure\Receipt.aspx.vb:line 288
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 3/24/2014 10:39 AM
+URL: https://www.securepaymentportal.com/MBCSecure/receipt.aspx?orderid=22717
+Form: 
+QueryString: orderid=22717
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)
+User IP: 172.11.26.62
+User Host Name: 172.11.26.62
+User is Authenticated: False
+Message: Value cannot be null.
+Parameter name: address
+Source: System
+TargetSite: Void .ctor(System.String, System.String, System.Text.Encoding)
+StackTrace:    at System.Net.Mail.MailAddress..ctor(String address, String displayName, Encoding displayNameEncoding)
+   at receipt.CSReceipt() in E:\wwwroot\securepaymentportal\AuthNetWebService\MBCSecure\Receipt.aspx.vb:line 196
+   at receipt.Page_Load(Object sender, EventArgs e) in E:\wwwroot\securepaymentportal\AuthNetWebService\MBCSecure\Receipt.aspx.vb:line 288
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 3/24/2014 10:39 AM
+URL: https://www.securepaymentportal.com/MBCSecure/receipt.aspx?orderid=22717
+Form: 
+QueryString: orderid=22717
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E)
+User IP: 172.11.26.62
+User Host Name: 172.11.26.62
+User is Authenticated: False
+Message: Value cannot be null.
+Parameter name: address
+Source: System
+TargetSite: Void .ctor(System.String, System.String, System.Text.Encoding)
+StackTrace:    at System.Net.Mail.MailAddress..ctor(String address, String displayName, Encoding displayNameEncoding)
+   at receipt.CSReceipt() in E:\wwwroot\securepaymentportal\AuthNetWebService\MBCSecure\Receipt.aspx.vb:line 196
+   at receipt.Page_Load(Object sender, EventArgs e) in E:\wwwroot\securepaymentportal\AuthNetWebService\MBCSecure\Receipt.aspx.vb:line 288
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+exceptionexceptionexceptionTime of Error: 4/30/2014 6:33 PM
+URL: https://www.securepaymentportal.com/MBCSecure/SchoolPay.aspx?schname=WEST+HILLSBOROUGH+SCHOOL&schcode=911647
+Form: __EVENTTARGET=ccsubmit&__EVENTARGUMENT=&__LASTFOCUS=&__VIEWSTATE=%2fwEPDwUJMTk3NzUxMzY2D2QWBAIDDxYCHgVzdHlsZQURdG9wOjYwJTtsZWZ0OjU1JTtkAgUPZBYGAgEPDxYCHgRUZXh0BRhXRVNUIEhJTExTQk9ST1VHSCBTQ0hPT0xkZAIFDxBkZBYBZmQCHw9kFgICCw8QZGQWAWZkZCjwj%2fUiVfF3S4MQTd%2fm4Qvylaf8wE1UYVrLjuD2wm4D&__EVENTVALIDATION=%2fwEdACdETCa19Ocdna1LqFyQE60ahqsWo2fV3mHJ8HSs0%2fycraPpsKID7Vybv2lXgwwH2Z6lBBbKnKWdwHena9IO6Q%2bJfL6FQgGvg5JETsvTJizZtsLEB2UoLWpNBnJFX99K9wdLstPcnKBeGTOmU3%2bfxEC91%2bTE3e7INQdJHgy2FwA7rb7AXZoL7phnxH3ABHxWMojstZ9ZLowT5aZF7vi7kTbOCu7xU4X4Eh5l7NO4c50FC7bTRRnbtqCij1Ur1lKRpFwX%2bq0yxT5vHlI9XkM%2fAAenqmjm86DZmVlYd1wPpsN2aXCfhzUeop5%2bO3gPyyIK97vEUc%2b17M4EbXeFeufDqXqaU2XmXFK6PeSCvsfYfmxYVQ1%2b4K%2fnCs2x77fapRZmb84ONV0TxEJ9HuhMIrboLk2TnHgW4k7oz4tmjhvh5QGgl1Dx7mODxET9%2b%2bJu9DpFtqW4lpoMAS%2bZyW%2br6GVGwtI3ErlcZ4hGzr%2fs2Al4F6ffdb9ISjpU2SPqV2NpB5oJ9RI673OqSwLWdG%2fB25hi0kDbIMCl%2fkLJtoogw6cgxL9CwXnLwVe1FjczhhqB%2f27pla7iMY9%2fYAaQrMAsB5%2bj560EVHRoDQizPb%2fzVEwVt9riqHzVKCp9Iv%2b0BIQKWaiJTjInwymy2zq7PztIy%2fFNBoBVqQckVBSN%2bBwA2%2f5be%2bcGHeJP8ur8xKIT5ag2xnmWnVDV%2fLgxF%2bt%2fUY2TergF3FjVhrlTZqmcgHtCx%2bgTbtUl3mAa7E2xx%2fYfTjg9Huzpw%2bYjd4JhwAFOmpZr8dYHkn2kqHq6SXr3iwEuz%2byOdweAQ0qrXcZ90gsvgnnqwz5y24plYp5q4f6I9O0nIClRX8RxyQ%2fmb1BezP%2bcFGMUqw22tA%3d%3d&rbpaytype=CC&txtamount=12424.24&txtemail=ttppeng%40gmail.com&hfschcode=911647&hfpaytype=CC&x_card_num=372394922282014&x_card_code=9354&x_first_name=Hsiao&x_last_name=Peng&ddlmonth=04&ddlyear=2016&eo_version=11.0.20.2&eo_style_keys=%2fwFk
+QueryString: schname=WEST+HILLSBOROUGH+SCHOOL&schcode=911647
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0; Touch; MALNJS)
+User IP: 24.23.159.36
+User Host Name: 24.23.159.36
+User is Authenticated: False
+Message: The remote name could not be resolved: 'secure.authorize.net'
+Source: System
+TargetSite: System.IO.Stream GetRequestStream(System.Net.TransportContext ByRef)
+StackTrace:    at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at submission.Capture(AuthReq request) in E:\wwwroot\securepaymentportal\AuthNetWebService\App_Code\submission.vb:line 88
+   at SchoolPay.ccsubmit_Click(Object sender, EventArgs e) in E:\wwwroot\securepaymentportal\AuthNetWebService\MBCSecure\SchoolPay.aspx.vb:line 105
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 5/12/2014 6:13 PM
+URL: https://www.securepaymentportal.com/MBCSecure/MbcPayment.aspx?orderid=26615
+Form: __EVENTTARGET=ccsubmit&__EVENTARGUMENT=&__LASTFOCUS=&__VIEWSTATE=%2fwEPDwUKMTU1NTUyNTkyNA9kFgICBQ9kFgwCAQ8PFgIeBFRleHQFFUhJTExTREFMRSBISUdIIFNDSE9PTGRkAgUPEGRkFgFmZAIJDw8WAh8ABQU0Ny41MGRkAg0PDxYCHwAFBTI2NjE1ZGQCEQ8PFgIfAAUVbW1iZkB6b29taW50ZXJuZXQubmV0ZGQCGw9kFgICCw8QZGQWAWZkZNL4D1%2bf1vPnzuRKJnQMBsJlIgOW3zJvuzHhbSZ7Ylp4&__EVENTVALIDATION=%2fwEdACZRfnHBOQ8UxqCT5ZiC76YDhqsWo2fV3mHJ8HSs0%2fycraPpsKID7Vybv2lXgwwH2Z6lBBbKnKWdwHena9IO6Q%2bJS7LT3JygXhkzplN%2fn8RAvemGYMQe9i8rWw4FzhnYZQbX5MTd7sg1B0keDLYXADutvsBdmgvumGfEfcAEfFYyiOy1n1kujBPlpkXu%2bLuRNs4K7vFThfgSHmXs07hznQULttNFGdu2oKKPVSvWUpGkXBf6rTLFPm8eUj1eQz8AB6eqaObzoNmZWVh3XA%2bmw3ZpcJ%2bHNR6inn47eA%2fLIgr3u8RRz7XszgRtd4V658OpeppTZeZcUro95IK%2bx9h%2bbFhVDX7gr%2bcKzbHvt9qlFmZvzg41XRPEQn0e6EwituguTZOceBbiTujPi2aOG%2bHlAaCXUPHuY4PERP374m70OkW2pbiWmgwBL5nJb6voZUbC0jcSuVxniEbOv%2bzYCXgXp991v0hKOlTZI%2bpXY2kHmgn1Ejrvc6pLAtZ0b8HbmGLSQNsgwKX%2bQsm2iiDDpyDEv0LBecvBV7UWNzOGGoH%2fbumVruIxj39gBpCswCwHn6PnrQRUdGgNCLM9v%2fNUTBW32uKofNUoKn0i%2f7QEhApZqIlOMifDKbLbOrs%2fO0jL8U0GgFWpByRUFI34HADb%2flt75wYd4k%2fy6vzEohPlqDbGeZadUNX8uDEX639RjZN6uAXcWNWGuVNmqZyAe0LH6BNu1SXeYBrsTbHH9h9OOD0e7OnD5iN3gmHAAU6almvx1geSfaSoerpJeveLAS7P7I53B4BDSqtdxn3SCy%2bCeerDPnLbijwer8pGgS0FWE5l0Rmf7AmII4ozeJbtyxV%2bfJq7cHR3&rbpaytype=CC&hfschcode=124345&hfschinvoicenumber=70904&hfpaytype=CC&x_card_num=4034900016745724&x_card_code=371&x_first_name=Penny&x_last_name=Strine&ddlmonth=03&ddlyear=2017&eo_version=11.0.20.2&eo_style_keys=%2fwFk
+QueryString: orderid=26615
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0
+User IP: 24.112.229.18
+User Host Name: 24.112.229.18
+User is Authenticated: False
+Message: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 64.94.118.33:443
+Source: System
+TargetSite: Void DoConnect(System.Net.EndPoint, System.Net.SocketAddress)
+StackTrace:    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+
+
+
+
+Time of Error: 5/12/2014 9:20 PM
+URL: https://www.securepaymentportal.com/MBCSecure/MbcPayment.aspx?orderid=26616
+Form: __EVENTTARGET=ccsubmit&__EVENTARGUMENT=&__LASTFOCUS=&__VIEWSTATE=%2fwEPDwUKMTU1NTUyNTkyNA9kFgICBQ9kFgwCAQ8PFgIeBFRleHQFGFRSSU5JVFkgRVBJU0NPUEFMIFNDSE9PTGRkAgUPEGRkFgFmZAIJDw8WAh8ABQYxMzguMDBkZAINDw8WAh8ABQUyNjYxNmRkAhEPDxYCHwAFEWRsamFuZGVyQHRpc2QubmV0ZGQCGw9kFgICCw8QZGQWAWZkZKuxbMMbLNHPu0LegpfqeWjvnuwkqqnTdB4JU%2fzyzHpA&__EVENTVALIDATION=%2fwEdACZGrJhLf9ysiwa2MzrbVgaZhqsWo2fV3mHJ8HSs0%2fycraPpsKID7Vybv2lXgwwH2Z6lBBbKnKWdwHena9IO6Q%2bJS7LT3JygXhkzplN%2fn8RAvemGYMQe9i8rWw4FzhnYZQbX5MTd7sg1B0keDLYXADutvsBdmgvumGfEfcAEfFYyiOy1n1kujBPlpkXu%2bLuRNs4K7vFThfgSHmXs07hznQULttNFGdu2oKKPVSvWUpGkXBf6rTLFPm8eUj1eQz8AB6eqaObzoNmZWVh3XA%2bmw3ZpcJ%2bHNR6inn47eA%2fLIgr3u8RRz7XszgRtd4V658OpeppTZeZcUro95IK%2bx9h%2bbFhVDX7gr%2bcKzbHvt9qlFmZvzg41XRPEQn0e6EwituguTZOceBbiTujPi2aOG%2bHlAaCXUPHuY4PERP374m70OkW2pbiWmgwBL5nJb6voZUbC0jcSuVxniEbOv%2bzYCXgXp991v0hKOlTZI%2bpXY2kHmgn1Ejrvc6pLAtZ0b8HbmGLSQNsgwKX%2bQsm2iiDDpyDEv0LBecvBV7UWNzOGGoH%2fbumVruIxj39gBpCswCwHn6PnrQRUdGgNCLM9v%2fNUTBW32uKofNUoKn0i%2f7QEhApZqIlOMifDKbLbOrs%2fO0jL8U0GgFWpByRUFI34HADb%2flt75wYd4k%2fy6vzEohPlqDbGeZadUNX8uDEX639RjZN6uAXcWNWGuVNmqZyAe0LH6BNu1SXeYBrsTbHH9h9OOD0e7OnD5iN3gmHAAU6almvx1geSfaSoerpJeveLAS7P7I53B4BDSqtdxn3SCy%2bCeerDPnLbimIlwdPseomEm8Sxz%2b76yMazKjAnv0MKkyfLZaxl%2bymM&rbpaytype=CC&hfschcode=026275&hfschinvoicenumber=71103&hfpaytype=CC&x_card_num=4313073476660726&x_card_code=538&x_first_name=Martha&x_last_name=Geffert&ddlmonth=09&ddlyear=2015&eo_version=11.0.20.2&eo_style_keys=%2fwFk
+QueryString: orderid=26616
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/5.0 (iPad; CPU OS 7_1_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/7.0 Mobile/11D201 Safari/9537.53
+User IP: 107.107.184.222
+User Host Name: 107.107.184.222
+User is Authenticated: False
+Message: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 64.94.118.32:443
+Source: System
+TargetSite: Void DoConnect(System.Net.EndPoint, System.Net.SocketAddress)
+StackTrace:    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+
+
+
+
+Time of Error: 5/12/2014 9:21 PM
+URL: https://www.securepaymentportal.com/MBCSecure/MbcPayment.aspx?orderid=26616
+Form: __EVENTTARGET=ccsubmit&__EVENTARGUMENT=&__LASTFOCUS=&__VIEWSTATE=%2fwEPDwUKMTU1NTUyNTkyNA9kFgICBQ9kFgwCAQ8PFgIeBFRleHQFGFRSSU5JVFkgRVBJU0NPUEFMIFNDSE9PTGRkAgUPEGRkFgFmZAIJDw8WAh8ABQYxMzguMDBkZAINDw8WAh8ABQUyNjYxNmRkAhEPDxYCHwAFEWRsamFuZGVyQHRpc2QubmV0ZGQCGw9kFgICCw8QZGQWAWZkZKuxbMMbLNHPu0LegpfqeWjvnuwkqqnTdB4JU%2fzyzHpA&__EVENTVALIDATION=%2fwEdACZGrJhLf9ysiwa2MzrbVgaZhqsWo2fV3mHJ8HSs0%2fycraPpsKID7Vybv2lXgwwH2Z6lBBbKnKWdwHena9IO6Q%2bJS7LT3JygXhkzplN%2fn8RAvemGYMQe9i8rWw4FzhnYZQbX5MTd7sg1B0keDLYXADutvsBdmgvumGfEfcAEfFYyiOy1n1kujBPlpkXu%2bLuRNs4K7vFThfgSHmXs07hznQULttNFGdu2oKKPVSvWUpGkXBf6rTLFPm8eUj1eQz8AB6eqaObzoNmZWVh3XA%2bmw3ZpcJ%2bHNR6inn47eA%2fLIgr3u8RRz7XszgRtd4V658OpeppTZeZcUro95IK%2bx9h%2bbFhVDX7gr%2bcKzbHvt9qlFmZvzg41XRPEQn0e6EwituguTZOceBbiTujPi2aOG%2bHlAaCXUPHuY4PERP374m70OkW2pbiWmgwBL5nJb6voZUbC0jcSuVxniEbOv%2bzYCXgXp991v0hKOlTZI%2bpXY2kHmgn1Ejrvc6pLAtZ0b8HbmGLSQNsgwKX%2bQsm2iiDDpyDEv0LBecvBV7UWNzOGGoH%2fbumVruIxj39gBpCswCwHn6PnrQRUdGgNCLM9v%2fNUTBW32uKofNUoKn0i%2f7QEhApZqIlOMifDKbLbOrs%2fO0jL8U0GgFWpByRUFI34HADb%2flt75wYd4k%2fy6vzEohPlqDbGeZadUNX8uDEX639RjZN6uAXcWNWGuVNmqZyAe0LH6BNu1SXeYBrsTbHH9h9OOD0e7OnD5iN3gmHAAU6almvx1geSfaSoerpJeveLAS7P7I53B4BDSqtdxn3SCy%2bCeerDPnLbimIlwdPseomEm8Sxz%2b76yMazKjAnv0MKkyfLZaxl%2bymM&rbpaytype=CC&hfschcode=026275&hfschinvoicenumber=71103&hfpaytype=CC&x_card_num=4313073476660726&x_card_code=538&x_first_name=Martha&x_last_name=Geffert&ddlmonth=09&ddlyear=2015&eo_version=11.0.20.2&eo_style_keys=%2fwFk
+QueryString: orderid=26616
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/5.0 (iPad; CPU OS 7_1_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/7.0 Mobile/11D201 Safari/9537.53
+User IP: 107.107.184.222
+User Host Name: 107.107.184.222
+User is Authenticated: False
+Message: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 64.94.118.32:443
+Source: System
+TargetSite: Void DoConnect(System.Net.EndPoint, System.Net.SocketAddress)
+StackTrace:    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+
+
+
+
+Time of Error: 5/12/2014 9:22 PM
+URL: https://www.securepaymentportal.com/MBCSecure/MbcPayment.aspx?orderid=26616
+Form: __EVENTTARGET=ccsubmit&__EVENTARGUMENT=&__LASTFOCUS=&__VIEWSTATE=%2fwEPDwUKMTU1NTUyNTkyNA9kFgICBQ9kFgwCAQ8PFgIeBFRleHQFGFRSSU5JVFkgRVBJU0NPUEFMIFNDSE9PTGRkAgUPEGRkFgFmZAIJDw8WAh8ABQYxMzguMDBkZAINDw8WAh8ABQUyNjYxNmRkAhEPDxYCHwAFEWRsamFuZGVyQHRpc2QubmV0ZGQCGw9kFgICCw8QZGQWAWZkZKuxbMMbLNHPu0LegpfqeWjvnuwkqqnTdB4JU%2fzyzHpA&__EVENTVALIDATION=%2fwEdACZGrJhLf9ysiwa2MzrbVgaZhqsWo2fV3mHJ8HSs0%2fycraPpsKID7Vybv2lXgwwH2Z6lBBbKnKWdwHena9IO6Q%2bJS7LT3JygXhkzplN%2fn8RAvemGYMQe9i8rWw4FzhnYZQbX5MTd7sg1B0keDLYXADutvsBdmgvumGfEfcAEfFYyiOy1n1kujBPlpkXu%2bLuRNs4K7vFThfgSHmXs07hznQULttNFGdu2oKKPVSvWUpGkXBf6rTLFPm8eUj1eQz8AB6eqaObzoNmZWVh3XA%2bmw3ZpcJ%2bHNR6inn47eA%2fLIgr3u8RRz7XszgRtd4V658OpeppTZeZcUro95IK%2bx9h%2bbFhVDX7gr%2bcKzbHvt9qlFmZvzg41XRPEQn0e6EwituguTZOceBbiTujPi2aOG%2bHlAaCXUPHuY4PERP374m70OkW2pbiWmgwBL5nJb6voZUbC0jcSuVxniEbOv%2bzYCXgXp991v0hKOlTZI%2bpXY2kHmgn1Ejrvc6pLAtZ0b8HbmGLSQNsgwKX%2bQsm2iiDDpyDEv0LBecvBV7UWNzOGGoH%2fbumVruIxj39gBpCswCwHn6PnrQRUdGgNCLM9v%2fNUTBW32uKofNUoKn0i%2f7QEhApZqIlOMifDKbLbOrs%2fO0jL8U0GgFWpByRUFI34HADb%2flt75wYd4k%2fy6vzEohPlqDbGeZadUNX8uDEX639RjZN6uAXcWNWGuVNmqZyAe0LH6BNu1SXeYBrsTbHH9h9OOD0e7OnD5iN3gmHAAU6almvx1geSfaSoerpJeveLAS7P7I53B4BDSqtdxn3SCy%2bCeerDPnLbimIlwdPseomEm8Sxz%2b76yMazKjAnv0MKkyfLZaxl%2bymM&rbpaytype=CC&hfschcode=026275&hfschinvoicenumber=71103&hfpaytype=CC&x_card_num=4313073476660726&x_card_code=538&x_first_name=Martha&x_last_name=Geffert&ddlmonth=09&ddlyear=2015&eo_version=11.0.20.2&eo_style_keys=%2fwFk
+QueryString: orderid=26616
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/5.0 (iPad; CPU OS 7_1_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/7.0 Mobile/11D201 Safari/9537.53
+User IP: 107.107.184.222
+User Host Name: 107.107.184.222
+User is Authenticated: False
+Message: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 64.94.118.32:443
+Source: System
+TargetSite: Void DoConnect(System.Net.EndPoint, System.Net.SocketAddress)
+StackTrace:    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+
+
+
+
+Time of Error: 5/12/2014 9:26 PM
+URL: https://www.securepaymentportal.com/MBCSecure/MbcPayment.aspx?orderid=26617
+Form: __EVENTTARGET=ccsubmit&__EVENTARGUMENT=&__LASTFOCUS=&__VIEWSTATE=%2fwEPDwUKMTU1NTUyNTkyNA9kFgICBQ9kFgwCAQ8PFgIeBFRleHQFGFRSSU5JVFkgRVBJU0NPUEFMIFNDSE9PTGRkAgUPEGRkFgFmZAIJDw8WAh8ABQYxMzguMDBkZAINDw8WAh8ABQUyNjYxN2RkAhEPDxYCHwAFEWRsamFuZGVyQHRpc2QubmV0ZGQCGw9kFgICCw8QZGQWAWZkZH%2b5f5yVUkPXMpRKPxpSPiJEFs64FQxJeHmFnpFF1y%2fH&__EVENTVALIDATION=%2fwEdACbbqjky4A%2bdhpyAy4EI7MeuhqsWo2fV3mHJ8HSs0%2fycraPpsKID7Vybv2lXgwwH2Z6lBBbKnKWdwHena9IO6Q%2bJS7LT3JygXhkzplN%2fn8RAvemGYMQe9i8rWw4FzhnYZQbX5MTd7sg1B0keDLYXADutvsBdmgvumGfEfcAEfFYyiOy1n1kujBPlpkXu%2bLuRNs4K7vFThfgSHmXs07hznQULttNFGdu2oKKPVSvWUpGkXBf6rTLFPm8eUj1eQz8AB6eqaObzoNmZWVh3XA%2bmw3ZpcJ%2bHNR6inn47eA%2fLIgr3u8RRz7XszgRtd4V658OpeppTZeZcUro95IK%2bx9h%2bbFhVDX7gr%2bcKzbHvt9qlFmZvzg41XRPEQn0e6EwituguTZOceBbiTujPi2aOG%2bHlAaCXUPHuY4PERP374m70OkW2pbiWmgwBL5nJb6voZUbC0jcSuVxniEbOv%2bzYCXgXp991v0hKOlTZI%2bpXY2kHmgn1Ejrvc6pLAtZ0b8HbmGLSQNsgwKX%2bQsm2iiDDpyDEv0LBecvBV7UWNzOGGoH%2fbumVruIxj39gBpCswCwHn6PnrQRUdGgNCLM9v%2fNUTBW32uKofNUoKn0i%2f7QEhApZqIlOMifDKbLbOrs%2fO0jL8U0GgFWpByRUFI34HADb%2flt75wYd4k%2fy6vzEohPlqDbGeZadUNX8uDEX639RjZN6uAXcWNWGuVNmqZyAe0LH6BNu1SXeYBrsTbHH9h9OOD0e7OnD5iN3gmHAAU6almvx1geSfaSoerpJeveLAS7P7I53B4BDSqtdxn3SCy%2bCeerDPnLbirjobVl6b7XYZg0lxaKqeGbtDs2knFgcxjh7zoP2hvph&rbpaytype=CC&hfschcode=026275&hfschinvoicenumber=71103&hfpaytype=CC&x_card_num=4313073476660726&x_card_code=538&x_first_name=Martha+&x_last_name=Geffert&ddlmonth=09&ddlyear=2015&eo_version=11.0.20.2&eo_style_keys=%2fwFk
+QueryString: orderid=26617
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/5.0 (iPad; CPU OS 7_1_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/7.0 Mobile/11D201 Safari/9537.53
+User IP: 107.107.184.222
+User Host Name: 107.107.184.222
+User is Authenticated: False
+Message: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 64.94.118.32:443
+Source: System
+TargetSite: Void DoConnect(System.Net.EndPoint, System.Net.SocketAddress)
+StackTrace:    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+
+
+
+
+Time of Error: 5/12/2014 9:44 PM
+URL: https://www.securepaymentportal.com/MBCSecure/MbcPayment.aspx?orderid=26618
+Form: __EVENTTARGET=ccsubmit&__EVENTARGUMENT=&__LASTFOCUS=&__VIEWSTATE=%2fwEPDwUKMTU1NTUyNTkyNA9kFgICBQ9kFgwCAQ8PFgIeBFRleHQFD0NIUklTVCBUSEUgS0lOR2RkAgUPEGRkFgFmZAIJDw8WAh8ABQUzMS4wMGRkAg0PDxYCHwAFBTI2NjE4ZGQCEQ8PFgIfAAURTEpXYXJkYUBnbWFpbC5jb21kZAIbD2QWAgILDxBkZBYBZmRk16H1CupFywOd1x3uDqbgkyfWGLLlcKRZnTvGAK1xAYQ%3d&__EVENTVALIDATION=%2fwEdACa4tJSdmHzV0YzYrttrhJgqhqsWo2fV3mHJ8HSs0%2fycraPpsKID7Vybv2lXgwwH2Z6lBBbKnKWdwHena9IO6Q%2bJS7LT3JygXhkzplN%2fn8RAvemGYMQe9i8rWw4FzhnYZQbX5MTd7sg1B0keDLYXADutvsBdmgvumGfEfcAEfFYyiOy1n1kujBPlpkXu%2bLuRNs4K7vFThfgSHmXs07hznQULttNFGdu2oKKPVSvWUpGkXBf6rTLFPm8eUj1eQz8AB6eqaObzoNmZWVh3XA%2bmw3ZpcJ%2bHNR6inn47eA%2fLIgr3u8RRz7XszgRtd4V658OpeppTZeZcUro95IK%2bx9h%2bbFhVDX7gr%2bcKzbHvt9qlFmZvzg41XRPEQn0e6EwituguTZOceBbiTujPi2aOG%2bHlAaCXUPHuY4PERP374m70OkW2pbiWmgwBL5nJb6voZUbC0jcSuVxniEbOv%2bzYCXgXp991v0hKOlTZI%2bpXY2kHmgn1Ejrvc6pLAtZ0b8HbmGLSQNsgwKX%2bQsm2iiDDpyDEv0LBecvBV7UWNzOGGoH%2fbumVruIxj39gBpCswCwHn6PnrQRUdGgNCLM9v%2fNUTBW32uKofNUoKn0i%2f7QEhApZqIlOMifDKbLbOrs%2fO0jL8U0GgFWpByRUFI34HADb%2flt75wYd4k%2fy6vzEohPlqDbGeZadUNX8uDEX639RjZN6uAXcWNWGuVNmqZyAe0LH6BNu1SXeYBrsTbHH9h9OOD0e7OnD5iN3gmHAAU6almvx1geSfaSoerpJeveLAS7P7I53B4BDSqtdxn3SCy%2bCeerDPnLbiofiadH1D7AfK4Tgevp9ETA9E6xGZ%2bgbtpzXYO5BRo7I&rbpaytype=CC&hfschcode=123979&hfschinvoicenumber=71188&hfpaytype=CC&x_card_num=6011004865872028&x_card_code=263&x_first_name=Lori&x_last_name=Warda&ddlmonth=01&ddlyear=2018&eo_version=11.0.20.2&eo_style_keys=%2fwFk
+QueryString: orderid=26618
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 Safari/537.36
+User IP: 207.19.64.2
+User Host Name: 207.19.64.2
+User is Authenticated: False
+Message: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 64.94.118.33:443
+Source: System
+TargetSite: Void DoConnect(System.Net.EndPoint, System.Net.SocketAddress)
+StackTrace:    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+
+
+
+
+Time of Error: 5/12/2014 9:45 PM
+URL: https://www.securepaymentportal.com/MBCSecure/MbcPayment.aspx?orderid=26618
+Form: __EVENTTARGET=ccsubmit&__EVENTARGUMENT=&__LASTFOCUS=&__VIEWSTATE=%2fwEPDwUKMTU1NTUyNTkyNA9kFgICBQ9kFgwCAQ8PFgIeBFRleHQFD0NIUklTVCBUSEUgS0lOR2RkAgUPEGRkFgFmZAIJDw8WAh8ABQUzMS4wMGRkAg0PDxYCHwAFBTI2NjE4ZGQCEQ8PFgIfAAURTEpXYXJkYUBnbWFpbC5jb21kZAIbD2QWAgILDxBkZBYBZmRk16H1CupFywOd1x3uDqbgkyfWGLLlcKRZnTvGAK1xAYQ%3d&__EVENTVALIDATION=%2fwEdACa4tJSdmHzV0YzYrttrhJgqhqsWo2fV3mHJ8HSs0%2fycraPpsKID7Vybv2lXgwwH2Z6lBBbKnKWdwHena9IO6Q%2bJS7LT3JygXhkzplN%2fn8RAvemGYMQe9i8rWw4FzhnYZQbX5MTd7sg1B0keDLYXADutvsBdmgvumGfEfcAEfFYyiOy1n1kujBPlpkXu%2bLuRNs4K7vFThfgSHmXs07hznQULttNFGdu2oKKPVSvWUpGkXBf6rTLFPm8eUj1eQz8AB6eqaObzoNmZWVh3XA%2bmw3ZpcJ%2bHNR6inn47eA%2fLIgr3u8RRz7XszgRtd4V658OpeppTZeZcUro95IK%2bx9h%2bbFhVDX7gr%2bcKzbHvt9qlFmZvzg41XRPEQn0e6EwituguTZOceBbiTujPi2aOG%2bHlAaCXUPHuY4PERP374m70OkW2pbiWmgwBL5nJb6voZUbC0jcSuVxniEbOv%2bzYCXgXp991v0hKOlTZI%2bpXY2kHmgn1Ejrvc6pLAtZ0b8HbmGLSQNsgwKX%2bQsm2iiDDpyDEv0LBecvBV7UWNzOGGoH%2fbumVruIxj39gBpCswCwHn6PnrQRUdGgNCLM9v%2fNUTBW32uKofNUoKn0i%2f7QEhApZqIlOMifDKbLbOrs%2fO0jL8U0GgFWpByRUFI34HADb%2flt75wYd4k%2fy6vzEohPlqDbGeZadUNX8uDEX639RjZN6uAXcWNWGuVNmqZyAe0LH6BNu1SXeYBrsTbHH9h9OOD0e7OnD5iN3gmHAAU6almvx1geSfaSoerpJeveLAS7P7I53B4BDSqtdxn3SCy%2bCeerDPnLbiofiadH1D7AfK4Tgevp9ETA9E6xGZ%2bgbtpzXYO5BRo7I&rbpaytype=CC&hfschcode=123979&hfschinvoicenumber=71188&hfpaytype=CC&x_card_num=6011004865872028&x_card_code=263&x_first_name=Lori&x_last_name=Warda&ddlmonth=01&ddlyear=2018&eo_version=11.0.20.2&eo_style_keys=%2fwFk
+QueryString: orderid=26618
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 Safari/537.36
+User IP: 207.19.64.2
+User Host Name: 207.19.64.2
+User is Authenticated: False
+Message: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 64.94.118.33:443
+Source: System
+TargetSite: Void DoConnect(System.Net.EndPoint, System.Net.SocketAddress)
+StackTrace:    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+
+
+
+
+Time of Error: 5/12/2014 10:40 PM
+URL: https://www.securepaymentportal.com/MBCSecure/MbcPayment.aspx?orderid=26619
+Form: __EVENTTARGET=ccsubmit&__EVENTARGUMENT=&__LASTFOCUS=&__VIEWSTATE=%2fwEPDwUKMTU1NTUyNTkyNA9kFgICBQ9kFgwCAQ8PFgIeBFRleHQFGFRSSU5JVFkgRVBJU0NPUEFMIFNDSE9PTGRkAgUPEGRkFgFmZAIJDw8WAh8ABQYxMzguMDBkZAINDw8WAh8ABQUyNjYxOWRkAhEPDxYCHwAFEWRsamFuZGVyQHRpc2QubmV0ZGQCGw9kFgICCw8QZGQWAWZkZMb%2fCKbbY8ixEfx8GKbYmulu9HTN6iuIsG7cxmAwHQWm&__EVENTVALIDATION=%2fwEdACbyJ5neGG%2bK4p4wXba%2bezrIhqsWo2fV3mHJ8HSs0%2fycraPpsKID7Vybv2lXgwwH2Z6lBBbKnKWdwHena9IO6Q%2bJS7LT3JygXhkzplN%2fn8RAvemGYMQe9i8rWw4FzhnYZQbX5MTd7sg1B0keDLYXADutvsBdmgvumGfEfcAEfFYyiOy1n1kujBPlpkXu%2bLuRNs4K7vFThfgSHmXs07hznQULttNFGdu2oKKPVSvWUpGkXBf6rTLFPm8eUj1eQz8AB6eqaObzoNmZWVh3XA%2bmw3ZpcJ%2bHNR6inn47eA%2fLIgr3u8RRz7XszgRtd4V658OpeppTZeZcUro95IK%2bx9h%2bbFhVDX7gr%2bcKzbHvt9qlFmZvzg41XRPEQn0e6EwituguTZOceBbiTujPi2aOG%2bHlAaCXUPHuY4PERP374m70OkW2pbiWmgwBL5nJb6voZUbC0jcSuVxniEbOv%2bzYCXgXp991v0hKOlTZI%2bpXY2kHmgn1Ejrvc6pLAtZ0b8HbmGLSQNsgwKX%2bQsm2iiDDpyDEv0LBecvBV7UWNzOGGoH%2fbumVruIxj39gBpCswCwHn6PnrQRUdGgNCLM9v%2fNUTBW32uKofNUoKn0i%2f7QEhApZqIlOMifDKbLbOrs%2fO0jL8U0GgFWpByRUFI34HADb%2flt75wYd4k%2fy6vzEohPlqDbGeZadUNX8uDEX639RjZN6uAXcWNWGuVNmqZyAe0LH6BNu1SXeYBrsTbHH9h9OOD0e7OnD5iN3gmHAAU6almvx1geSfaSoerpJeveLAS7P7I53B4BDSqtdxn3SCy%2bCeerDPnLbikyMKk%2fGQBDL7ftwsRkCmHnr5pj7rvt%2f2gEE6qJsJ%2fcr&rbpaytype=CC&hfschcode=026275&hfschinvoicenumber=71103&hfpaytype=CC&x_card_num=4313073476660726&x_card_code=538&x_first_name=Martha&x_last_name=Geffert&ddlmonth=09&ddlyear=2015&eo_version=11.0.20.2&eo_style_keys=%2fwFk
+QueryString: orderid=26619
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 Safari/537.36
+User IP: 107.107.184.222
+User Host Name: 107.107.184.222
+User is Authenticated: False
+Message: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 64.94.118.33:443
+Source: System
+TargetSite: Void DoConnect(System.Net.EndPoint, System.Net.SocketAddress)
+StackTrace:    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+
+
+
+
+Time of Error: 5/27/2014 5:43 PM
+URL: https://www.securepaymentportal.com/MBCSecure/receipt.aspx?orderid=26915
+Form: 
+QueryString: orderid=26915
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/5.0 (iPad; CPU OS 7_0_6 like Mac OS X) AppleWebKit/537.51.1 (KHTML, like Gecko) Version/7.0 Mobile/11B651 Safari/9537.53
+User IP: 74.194.215.144
+User Host Name: 74.194.215.144
+User is Authenticated: False
+Message: Unable to connect to any of the specified MySQL hosts.
+Source: MySql.Data
+TargetSite: Void Open()
+StackTrace:    at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   at System.Web.UI.WebControls.SqlDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()
+   at System.Web.UI.WebControls.FormView.EnsureDataBound()
+   at System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.WebControls.CompositeDataBoundControl.get_Controls()
+   at System.Web.UI.WebControls.FormView.PrepareControlHierarchy()
+   at System.Web.UI.WebControls.FormView.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at receipt.CSReceipt() in E:\wwwroot\securepaymentportal\AuthNetWebService\MBCSecure\Receipt.aspx.vb:line 153
+   at receipt.Page_Load(Object sender, EventArgs e) in E:\wwwroot\securepaymentportal\AuthNetWebService\MBCSecure\Receipt.aspx.vb:line 288
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 6/8/2014 2:43 PM
+URL: https://www.securepaymentportal.com/MBCSecure/webresource.axd
+Form: 
+QueryString: 
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20100101 Firefox/29.0
+User IP: 67.8.202.136
+User Host Name: 67.8.202.136
+User is Authenticated: False
+Message: This is an invalid webresource request.
+Source: System.Web
+TargetSite: Void System.Web.IHttpHandler.ProcessRequest(System.Web.HttpContext)
+StackTrace:    at System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.ProcessRequest(HttpContext context)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+
+
+Time of Error: 6/9/2014 12:27 PM
+URL: https://www.securepaymentportal.com/MBCSecure/SchoolPay.aspx?schname=UNITED+CHRISTIAN+ACADEMY&schcode=141307
+Form: __EVENTTARGET=ddlmonth&__EVENTARGUMENT=&__LASTFOCUS=&__VIEWSTATE=%2fwEPDwUJMTk3NzUxMzY2D2QWBAIDDxYCHgVzdHlsZQURdG9wOjYwJTtsZWZ0OjU1JTtkAgUPZBYGAgEPDxYCHgRUZXh0BRhVTklURUQgQ0hSSVNUSUFOIEFDQURFTVlkZAIFDxBkZBYBZmQCHw9kFgICCw8QZGQWAWZkZBJ4PXPRI12EuGvahzB1N4QVFVW0gIuJb182s2pq7d%2f9&__EVENTVALIDATION=%2fwEdACcEchWs%2bxgoKvzgdoTPBP7ahqsWo2fV3mHJ8HSs0%2fycraPpsKID7Vybv2lXgwwH2Z6lBBbKnKWdwHena9IO6Q%2bJfL6FQgGvg5JETsvTJizZtsLEB2UoLWpNBnJFX99K9wdLstPcnKBeGTOmU3%2bfxEC91%2bTE3e7INQdJHgy2FwA7rb7AXZoL7phnxH3ABHxWMojstZ9ZLowT5aZF7vi7kTbOCu7xU4X4Eh5l7NO4c50FC7bTRRnbtqCij1Ur1lKRpFwX%2bq0yxT5vHlI9XkM%2fAAenqmjm86DZmVlYd1wPpsN2aXCfhzUeop5%2bO3gPyyIK97vEUc%2b17M4EbXeFeufDqXqaU2XmXFK6PeSCvsfYfmxYVQ1%25
+QueryString: schname=UNITED+CHRISTIAN+ACADEMY&schcode=141307
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/5.0 (Windows NT 6.2; WOW64; Trident/7.0; MDDCJS; rv:11.0) like Gecko
+User IP: 24.131.28.221
+User Host Name: 24.131.28.221
+User is Authenticated: False
+Message: The remote host closed the connection. The error code is 0x80070057.
+Source: System.Web
+TargetSite: Void RaiseCommunicationError(Int32, Boolean)
+StackTrace:    at System.Web.Hosting.IIS7WorkerRequest.RaiseCommunicationError(Int32 result, Boolean throwOnDisconnect)
+   at System.Web.Hosting.IIS7WorkerRequest.ExplicitFlush()
+   at System.Web.HttpResponse.Flush(Boolean finalFlush, Boolean async)
+   at System.Web.HttpResponse.End()
+   at ASP.global_asax.Session_Start(Object sender, EventArgs e) in E:\wwwroot\securepaymentportal\AuthNetWebService\global.asax:line 81
+   at System.Web.SessionState.SessionStateModule.CompleteAcquireState()
+   at System.Web.SessionState.SessionStateModule.BeginAcquireState(Object source, EventArgs e, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.AsyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+
+
+Time of Error: 6/9/2014 12:27 PM
+URL: https://www.securepaymentportal.com/MBCSecure/SchoolPay.aspx?schname=UNITED+CHRISTIAN+ACADEMY&schcode=141307
+Form: 
+QueryString: schname=UNITED+CHRISTIAN+ACADEMY&schcode=141307
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/5.0 (Windows NT 6.2; WOW64; Trident/7.0; MDDCJS; rv:11.0) like Gecko
+User IP: 24.131.28.221
+User Host Name: 24.131.28.221
+User is Authenticated: False
+Message: The remote host closed the connection. The error code is 0x80070057.
+Source: System.Web
+TargetSite: Void RaiseCommunicationError(Int32, Boolean)
+StackTrace:    at System.Web.Hosting.IIS7WorkerRequest.RaiseCommunicationError(Int32 result, Boolean throwOnDisconnect)
+   at System.Web.Hosting.IIS7WorkerRequest.ExplicitFlush()
+   at System.Web.HttpResponse.Flush(Boolean finalFlush, Boolean async)
+   at System.Web.HttpResponse.End()
+   at ASP.global_asax.Session_Start(Object sender, EventArgs e) in E:\wwwroot\securepaymentportal\AuthNetWebService\global.asax:line 81
+   at System.Web.SessionState.SessionStateModule.CompleteAcquireState()
+   at System.Web.SessionState.SessionStateModule.BeginAcquireState(Object source, EventArgs e, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.AsyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+
+
+Time of Error: 6/9/2014 12:27 PM
+URL: https://www.securepaymentportal.com/MBCSecure/SchoolPay.aspx?schname=UNITED+CHRISTIAN+ACADEMY&schcode=141307
+Form: 
+QueryString: schname=UNITED+CHRISTIAN+ACADEMY&schcode=141307
+Server Name: www.securepaymentportal.com
+User Agent: Mozilla/5.0 (Windows NT 6.2; WOW64; Trident/7.0; MDDCJS; rv:11.0) like Gecko
+User IP: 24.131.28.221
+User Host Name: 24.131.28.221
+User is Authenticated: False
+Message: The remote host closed the connection. The error code is 0x80070057.
+Source: System.Web
+TargetSite: Void RaiseCommunicationError(Int32, Boolean)
+StackTrace:    at System.Web.Hosting.IIS7WorkerRequest.RaiseCommunicationError(Int32 result, Boolean throwOnDisconnect)
+   at System.Web.Hosting.IIS7WorkerRequest.ExplicitFlush()
+   at System.Web.HttpResponse.Flush(Boolean finalFlush, Boolean async)
+   at System.Web.HttpResponse.End()
+   at ASP.global_asax.Session_Start(Object sender, EventArgs e) in E:\wwwroot\securepaymentportal\AuthNetWebService\global.asax:line 81
+   at System.Web.SessionState.SessionStateModule.CompleteAcquireState()
+   at System.Web.SessionState.SessionStateModule.BeginAcquireState(Object source, EventArgs e, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.AsyncEventExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+
+
+Time of Error: 10/19/2014 9:56 PM
+URL: http://localhost:62723/AuthNetWebService/MBCSecure/receipt.aspx?orderid=27872
+Form: 
+QueryString: orderid=27872
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:33.0) Gecko/20100101 Firefox/33.0
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: True
+Message: DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'cap'.
+Source: System.Web
+TargetSite: System.Object GetPropertyValue(System.Object, System.String)
+StackTrace:    at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   at System.Web.UI.DataBinder.Eval(Object container, String expression)
+   at System.Web.UI.TemplateControl.Eval(String expression)
+   at ASP.mbcsecure_receipt_aspx.__DataBinding__control44(Object sender, EventArgs e) in F:\InetPub\wwwroot\AuthNetWebService\MBCSecure\Receipt.aspx:line 128
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at System.Web.UI.WebControls.GridView.DataBind()
+   at System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()
+   at System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.WebControls.CompositeDataBoundControl.get_Controls()
+   at System.Web.UI.WebControls.GridView.PrepareControlHierarchy()
+   at System.Web.UI.WebControls.GridView.Render(HtmlTextWriter writer, Boolean renderPanel)
+   at System.Web.UI.WebControls.GridView.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at receipt.CSReceipt() in F:\InetPub\wwwroot\AuthNetWebService\MBCSecure\Receipt.aspx.vb:line 158
+   at receipt.Page_Load(Object sender, EventArgs e) in F:\InetPub\wwwroot\AuthNetWebService\MBCSecure\Receipt.aspx.vb:line 288
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 10/19/2014 9:59 PM
+URL: http://localhost:62723/AuthNetWebService/MBCSecure/receipt.aspx?orderid=27872
+Form: 
+QueryString: orderid=27872
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:33.0) Gecko/20100101 Firefox/33.0
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: True
+Message: DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'cap'.
+Source: System.Web
+TargetSite: System.Object GetPropertyValue(System.Object, System.String)
+StackTrace:    at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   at System.Web.UI.DataBinder.Eval(Object container, String expression)
+   at System.Web.UI.TemplateControl.Eval(String expression)
+   at ASP.mbcsecure_receipt_aspx.__DataBinding__control44(Object sender, EventArgs e) in F:\InetPub\wwwroot\AuthNetWebService\MBCSecure\Receipt.aspx:line 128
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at System.Web.UI.WebControls.GridView.DataBind()
+   at System.Web.UI.WebControls.BaseDataBoundControl.EnsureDataBound()
+   at System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at System.Web.UI.WebControls.CompositeDataBoundControl.get_Controls()
+   at System.Web.UI.WebControls.GridView.PrepareControlHierarchy()
+   at System.Web.UI.WebControls.GridView.Render(HtmlTextWriter writer, Boolean renderPanel)
+   at System.Web.UI.WebControls.GridView.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at receipt.CSReceipt() in F:\InetPub\wwwroot\AuthNetWebService\MBCSecure\Receipt.aspx.vb:line 158
+   at receipt.Page_Load(Object sender, EventArgs e) in F:\InetPub\wwwroot\AuthNetWebService\MBCSecure\Receipt.aspx.vb:line 288
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+exception
