@@ -1,0 +1,121 @@
+Time of Error: 3/31/2015 7:18 AM
+URL: http://localhost:62723/NewMbcSecure/Receipt.aspx?orderid=75358
+Form: 
+QueryString: orderid=75358
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: False
+Message: The DataSourceID of 'lvItems' must be the ID of a control of type IDataSource.  A control with ID 'dsorders' could not be found.
+Source: System.Web
+TargetSite: System.Web.UI.IDataSource GetDataSource()
+StackTrace:    at System.Web.UI.WebControls.DataBoundControl.GetDataSource()
+   at System.Web.UI.WebControls.DataBoundControl.ConnectToDataSourceView()
+   at System.Web.UI.WebControls.DataBoundControl.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+exceptionTime of Error: 4/2/2015 1:21 AM
+URL: http://localhost:62723/NewMbcSecure/Receipt.aspx?orderid=38185
+Form: 
+QueryString: orderid=38185
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: False
+Message: The DataSourceID of 'lvItems' must be the ID of a control of type IDataSource.  A control with ID 'dsorders' could not be found.
+Source: System.Web
+TargetSite: System.Web.UI.IDataSource GetDataSource()
+StackTrace:    at System.Web.UI.WebControls.DataBoundControl.GetDataSource()
+   at System.Web.UI.WebControls.DataBoundControl.ConnectToDataSourceView()
+   at System.Web.UI.WebControls.DataBoundControl.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 4/2/2015 1:23 AM
+URL: http://localhost:62723/NewMbcSecure/Receipt.aspx?orderid=38185
+Form: __EVENTTARGET=LinkButton1&__EVENTARGUMENT=&__VIEWSTATE=6LuugkUmCjFC3RJlEuq6Mw3vZTaEunmw1lX78J99sAsMECTLbTzCvSwM1dInnvAvP%2b6Ek4GeYC0nmfKBkgxeHFnoAMmiT6%2fIKUiOQUGl%2bzkuO9wEhC4CaCt9anz7R4nWhrrzqcG85MDLOhCZf6CxiHkodSRAXkMcChKxx3AKp4LVVdPYPYxzQg3d6i5LCOyZw6WDEwxeGtl2LpjzL2zZTTkdreWpXMy3y6ztSHduBGc%2bY1o%2b9Wg3Bq0J%2bY%2ftARmcbbcvPbTbcUowBPqSQMNZhWbzMjn0Ndx3e1%2b57xKitfpY56c%2fdXoDhaQdEJeKlqyNOAj3ZS8%2f88pI21QuEXhPhxErOZakYfrKQM2ekPZvpayrLqc2frZnzRdY8iYmfgpE4EtWgPq2k%2fk9mMnKUZMIBegMZOUyR99fpdj0POWETd5wG8BJjIOT%2bgh0yjdaKYQ21DnAdZCNVdGzyCWWEt9gCAqpubBXmF3ZblC1NbBe4dtM5FVI18ggA8FPK%2bZQoh6T4yGrnt02im8xauCJAaFIU6UaQltCBfzZA%2focJzZ2L0B73bIMbbRDRWXF50EbTtvSbBbGm8jPFGnvLoTYMtf8uY17wi9bjyuzZkuPZgdkjvxaqQios78EAJ5HFJtxULcQmyNZBPlmQ1yzwX6W6HGe5aogUJ1NRcc%2bVkqt4uztNGaff9jVCp0jPOHsE3mndquPXqPdq0fFn9hZAi%2fVT9gTnS2UNcmtCqIC33ySfnCt%2ba7YSXULQqg5Ostm5KhzTjgwp31U3jhJsSZSe8lPlG3P57E8iOyYXlNWBmHJM%2bGCzSlb0NHXHE1tUWNI8tWnNO7zFvCmQ8IogH60FJIH1h947HmntShalZOWjBd2wWtWE%2fUwZP1kmdexrQsYDdpJSzoDXXcI%2bXgRXrUccajokPW7ZzOC5x%2f1KzW9PFe8RTlVo7If2ZsBp3MlXIMxt3N0%2bnaQWDPdfpS8PcePIX11exSp8UFDcJhxm0sPqsx7UkD6xK6NeSfX6RbMKy96y7iVTkXdFYuUaSXiw9I9%2bw0Y%2fDxF5w%3d%3d&eo_version=11.0.20.2&eo_style_keys=%2fwFk&__VIEWSTATEGENERATOR=69D1CE64&__VIEWSTATEENCRYPTED=
+QueryString: orderid=38185
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: False
+Message: cap  is neither a DataColumn nor a DataRelation for table DefaultView.
+Source: System.Data
+TargetSite: System.Object get_Item(System.String)
+StackTrace:    at System.Data.DataRowView.get_Item(String property)
+   at receipt.GetOrderItems(String orderid) in F:\InetPub\wwwroot\AuthNetWebService\NewMbcSecure\Receipt.aspx.vb:line 451
+   at receipt.EmailReceipt() in F:\InetPub\wwwroot\AuthNetWebService\NewMbcSecure\Receipt.aspx.vb:line 100
+   at receipt.LinkButton1_Click(Object sender, EventArgs e) in F:\InetPub\wwwroot\AuthNetWebService\NewMbcSecure\Receipt.aspx.vb:line 374
+   at System.Web.UI.WebControls.LinkButton.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.LinkButton.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 4/2/2015 9:21 AM
+URL: http://localhost:62723/NewMbcSecure/Receipt.aspx?orderid=38185
+Form: __EVENTTARGET=LinkButton1&__EVENTARGUMENT=&__VIEWSTATE=n2ESVXE8AeiJfHAPsUtMYvt2%2bON9%2bCjT7RQ8CrPFTXnpVa3wH62kdKFER9kSzQGpDGbx%2fIg2O5Two7L%2bKlyw0yDFbfE35zvnvwQttT3b6ccM%2b6p5NczeQEWiY2L%2fHpnZAEpNIuWgtyRWZ9%2fveC4CEdmfv7LHIHCCud4LAVU%2bWlyfw%2fMfzkewLEWiF0d1HZmsiv0%2bsaCflXI97bY1t0pOeImFrh5flAwTkDopr%2bWIKVdgApKTIJOjDIrC5OE0VM94t3wfQqeYpoSXmEaYJIUr3BDmIqZhO0HpwSXkVkBXnKLUm%2f3zxofvg8EX9l5NxKwQnaUmT23EVi3mf4doq%2btsvgS7gen12vvs8tdsXhqLvkRWLSGF4WG%2fggrOsfcE%2bfrFt6UQdnqkKXsdR8ODO4Vhi06oa3eakwDse9yNBtvyZRLa7ukbR4biGsp1YSPj%2bQO9N2S4q1IjMQ%2fLfFny49ktvOYgFaR6X05bzuc6gWKkBQtQ8sybQ7faGEE8fsyX8xykQj1InOfYb6AV8qyb1b4017OTmc64ZeDwHvvrgQFaO%2brIsWeNHBLPz4SqoqMcNT7H0MHOU9AnQ%2btVMyA%2fOQX6RNXWKXvxwmYhTJoWTVilN2wCske11cWXE9zBCxOF%2bO8Xx6RdbRAhos4YRVR%2faVjVRJrmGnQr08g6erAKJEgAB7RD4ffGulmHdcNM4a7tW8VV84HRr7w3ve7CtK9kR8YEIEEnRD9c9xlEPuELZHvTEFgipKN7MhHDw8mkPV%2bnZI%2fN3kBL77vg6M8z3gd1T%2fNZKAtu%2bCJH%2ffnbPZoqA3PSKBx7rmEbXnnqsuiA3apAGnGcDUvm%2bVcaZ%2fUDHBJjzcSVnr6NLkhbDTlDMYMkU1yg%2fWigEGzRO%2bWtMt6P%2buwVIuvVhpHHcHR1hHNTE9T90s2IMCGJ1oFp5TAiIbKHO5NWOkf%2bzPJQM2zgcKGDZ06bzZGW9sskGYNvbMxNM3IGIky8o4kqx2CKaQnupOmOBXGyM%2fLFmzEfvPusEpFIJdx4FL6g2H7zSzngWnZLw5dRIGM7ho5eJQItb4uJFSf57RdwxSszoOV10YMZ3GcNBMXT5A0N8Tmabk8XRlphFoRty%2fDPMXF2syo6j1OFN0vIsXE59DEhDDVyPgMR0saOgmPSFity&eo_version=11.0.20.2&eo_style_keys=%2fwFk&__VIEWSTATEGENERATOR=69D1CE64&__VIEWSTATEENCRYPTED=
+QueryString: orderid=38185
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: False
+Message: Conversion from type 'DBNull' to type 'String' is not valid.
+Source: Microsoft.VisualBasic
+TargetSite: System.String ToString(System.Object)
+StackTrace:    at Microsoft.VisualBasic.CompilerServices.Conversions.ToString(Object Value)
+   at receipt.GetOrderItems(String orderid) in F:\InetPub\wwwroot\AuthNetWebService\NewMbcSecure\Receipt.aspx.vb:line 450
+   at receipt.EmailReceipt() in F:\InetPub\wwwroot\AuthNetWebService\NewMbcSecure\Receipt.aspx.vb:line 100
+   at receipt.LinkButton1_Click(Object sender, EventArgs e) in F:\InetPub\wwwroot\AuthNetWebService\NewMbcSecure\Receipt.aspx.vb:line 374
+   at System.Web.UI.WebControls.LinkButton.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.LinkButton.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 4/3/2015 3:07 PM
+URL: http://localhost:62723/NewMbcSecure/receipt.aspx?orderid=38199
+Form: 
+QueryString: orderid=38199
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: False
+Message: The DataSourceID of 'lvItems' must be the ID of a control of type IDataSource.  A control with ID 'dsorders' could not be found.
+Source: System.Web
+TargetSite: System.Web.UI.IDataSource GetDataSource()
+StackTrace:    at System.Web.UI.WebControls.DataBoundControl.GetDataSource()
+   at System.Web.UI.WebControls.DataBoundControl.ConnectToDataSourceView()
+   at System.Web.UI.WebControls.DataBoundControl.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+

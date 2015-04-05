@@ -1,0 +1,400 @@
+Time of Error: 5/5/2014 8:48 AM
+URL: http://localhost:62723/AuthNetWebService/MeridianSecure/CreditCardPayment.aspx?orderid=1094
+Form: 
+QueryString: orderid=1094
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:28.0) Gecko/20100101 Firefox/28.0
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: True
+Message: The file '/AuthNetWebService/MeridianSecure/CreditCardPayment.aspx' does not exist.
+Source: System.Web
+TargetSite: Void CheckVirtualFileExists(System.Web.VirtualPath)
+StackTrace:    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+
+
+Time of Error: 5/6/2014 9:06 AM
+URL: http://localhost:62723/AuthNetWebService/MeridianSecure/CreditCardPayment.aspx?orderid=1096
+Form: __EVENTTARGET=&__EVENTARGUMENT=&__LASTFOCUS=&__VIEWSTATE=%2fwEPDwUJMTM2Njc0MjA5D2QWAgIDD2QWCAIFDw8WAh4EVGV4dAUGMTU5LjAyZGQCBw8PFgIfAAUEMTA5NmRkAi0PD2QPEBYBZhYBFgIeDlBhcmFtZXRlclZhbHVlBQQxMDk2FgECBGRkAjEPD2QPEBYBZhYBFgIfAQUEMTA5NhYBAgRkZGTKPCAGxez8gVMD2ucmLSeN92lRcPdmiLOFKg8vxxU2QA%3d%3d&__EVENTVALIDATION=%2fwEdACSZOGvq9tjuFBa2QRpPeFUpzfg78Z8BXhXifTCAVkevd6bquqahweREhCEu0VsWX5K39ZtvgPbp1DYXldCAWuZRLx4Q14iMVMvsGyLW0W1cqqFxKzDckJRup0%2bhwouvsk6qZo6OUc%2b1sfXW1RLDa7RCvsBdmgvumGfEfcAEfFYyiOy1n1kujBPlpkXu%2bLuRNs4K7vFThfgSHmXs07hznQULttNFGdu2oKKPVSvWUpGkXBf6rTLFPm8eUj1eQz8AB6eqaObzoNmZWVh3XA%2bmw3ZpcJ%2bHNR6inn47eA%2fLIgr3u8RRz7XszgRtd4V658OpeppTZeZcUro95IK%2bx9h%2bbFhVDX7gr%2bcKzbHvt9qlFmZvzg41XRPEQn0e6EwituguTZOceBbiTujPi2aOG%2bHlAaCXUPHuY4PERP374m70OkW2pbiWmgwBL5nJb6voZUbC0jcSuVxniEbOv%2bzYCXgXp991v0hKOlTZI%2bpXY2kHmgn1Ejrvc6pLAtZ0b8HbmGLSQNsgwKX%2bQsm2iiDDpyDEv0LBecvBV7UWNzOGGoH%2fbumVruIxj39gBpCswCwHn6PnrQRUdGgNCLM9v%2fNUTBW32uKofNUoKn0i%2f7QEhApZqIlOMifDKbLbOrs%2fO0jL8U0GgFWpByRUFI34HADb%2flt75wYd4k%2fy6vzEohPlqDbGeZadUNX8uDEX639RjZN6uAXcWNWGuVNmqZyAe0LH6BNu1SXeYBrsTbHH9h9OOD0e7OnD5p6A7kCQOOUIAPaukEkY31%2fC2FFFJJNrullDdpRN5cfmXu1sa7QabZmqQCzT1UCLFg%3d%3d&Button1=Button&ddlcardtype=&x_card_num=&x_card_code=&x_first_name=&x_last_name=&ddlmonth=&ddlyear=&eo_version=11.0.20.2&eo_style_keys=%2fwFk
+QueryString: orderid=1096
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:28.0) Gecko/20100101 Firefox/28.0
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: True
+Message: Oh no!
+Source: App_Web_bxrc0hr0
+TargetSite: Void Button1_Click(System.Object, System.EventArgs)
+StackTrace:    at CreditCardPayment.Button1_Click(Object sender, EventArgs e) in F:\InetPub\wwwroot\AuthNetWebService\MeridianSecure\CreditCardPayment.aspx.vb:line 557
+   at System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 5/6/2014 9:09 AM
+URL: http://localhost:62723/AuthNetWebService/MeridianSecure/CreditCardPayment.aspx?orderid=1096
+Form: __EVENTTARGET=&__EVENTARGUMENT=&__LASTFOCUS=&__VIEWSTATE=%2fwEPDwUJMTM2Njc0MjA5D2QWAgIDD2QWCAIFDw8WAh4EVGV4dAUGMTU5LjAyZGQCBw8PFgIfAAUEMTA5NmRkAi0PD2QPEBYBZhYBFgIeDlBhcmFtZXRlclZhbHVlBQQxMDk2FgECBGRkAjEPD2QPEBYBZhYBFgIfAQUEMTA5NhYBAgRkZGTKPCAGxez8gVMD2ucmLSeN92lRcPdmiLOFKg8vxxU2QA%3d%3d&__EVENTVALIDATION=%2fwEdACSZOGvq9tjuFBa2QRpPeFUpzfg78Z8BXhXifTCAVkevd6bquqahweREhCEu0VsWX5K39ZtvgPbp1DYXldCAWuZRLx4Q14iMVMvsGyLW0W1cqqFxKzDckJRup0%2bhwouvsk6qZo6OUc%2b1sfXW1RLDa7RCvsBdmgvumGfEfcAEfFYyiOy1n1kujBPlpkXu%2bLuRNs4K7vFThfgSHmXs07hznQULttNFGdu2oKKPVSvWUpGkXBf6rTLFPm8eUj1eQz8AB6eqaObzoNmZWVh3XA%2bmw3ZpcJ%2bHNR6inn47eA%2fLIgr3u8RRz7XszgRtd4V658OpeppTZeZcUro95IK%2bx9h%2bbFhVDX7gr%2bcKzbHvt9qlFmZvzg41XRPEQn0e6EwituguTZOceBbiTujPi2aOG%2bHlAaCXUPHuY4PERP374m70OkW2pbiWmgwBL5nJb6voZUbC0jcSuVxniEbOv%2bzYCXgXp991v0hKOlTZI%2bpXY2kHmgn1Ejrvc6pLAtZ0b8HbmGLSQNsgwKX%2bQsm2iiDDpyDEv0LBecvBV7UWNzOGGoH%2fbumVruIxj39gBpCswCwHn6PnrQRUdGgNCLM9v%2fNUTBW32uKofNUoKn0i%2f7QEhApZqIlOMifDKbLbOrs%2fO0jL8U0GgFWpByRUFI34HADb%2flt75wYd4k%2fy6vzEohPlqDbGeZadUNX8uDEX639RjZN6uAXcWNWGuVNmqZyAe0LH6BNu1SXeYBrsTbHH9h9OOD0e7OnD5p6A7kCQOOUIAPaukEkY31%2fC2FFFJJNrullDdpRN5cfmXu1sa7QabZmqQCzT1UCLFg%3d%3d&Button1=Button&ddlcardtype=&x_card_num=&x_card_code=&x_first_name=&x_last_name=&ddlmonth=&ddlyear=&eo_version=11.0.20.2&eo_style_keys=%2fwFk
+QueryString: orderid=1096
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:28.0) Gecko/20100101 Firefox/28.0
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: True
+Message: Oh no!
+Source: App_Web_bxrc0hr0
+TargetSite: Void Button1_Click(System.Object, System.EventArgs)
+StackTrace:    at CreditCardPayment.Button1_Click(Object sender, EventArgs e) in F:\InetPub\wwwroot\AuthNetWebService\MeridianSecure\CreditCardPayment.aspx.vb:line 557
+   at System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 5/6/2014 9:11 AM
+URL: http://localhost:62723/AuthNetWebService/MeridianSecure/CreditCardPayment.aspx?orderid=1096
+Form: __EVENTTARGET=&__EVENTARGUMENT=&__LASTFOCUS=&__VIEWSTATE=%2fwEPDwUJMTM2Njc0MjA5D2QWAgIDD2QWCAIFDw8WAh4EVGV4dAUGMTU5LjAyZGQCBw8PFgIfAAUEMTA5NmRkAi0PD2QPEBYBZhYBFgIeDlBhcmFtZXRlclZhbHVlBQQxMDk2FgECBGRkAjEPD2QPEBYBZhYBFgIfAQUEMTA5NhYBAgRkZGTKPCAGxez8gVMD2ucmLSeN92lRcPdmiLOFKg8vxxU2QA%3d%3d&__EVENTVALIDATION=%2fwEdACSZOGvq9tjuFBa2QRpPeFUpzfg78Z8BXhXifTCAVkevd6bquqahweREhCEu0VsWX5K39ZtvgPbp1DYXldCAWuZRLx4Q14iMVMvsGyLW0W1cqqFxKzDckJRup0%2bhwouvsk6qZo6OUc%2b1sfXW1RLDa7RCvsBdmgvumGfEfcAEfFYyiOy1n1kujBPlpkXu%2bLuRNs4K7vFThfgSHmXs07hznQULttNFGdu2oKKPVSvWUpGkXBf6rTLFPm8eUj1eQz8AB6eqaObzoNmZWVh3XA%2bmw3ZpcJ%2bHNR6inn47eA%2fLIgr3u8RRz7XszgRtd4V658OpeppTZeZcUro95IK%2bx9h%2bbFhVDX7gr%2bcKzbHvt9qlFmZvzg41XRPEQn0e6EwituguTZOceBbiTujPi2aOG%2bHlAaCXUPHuY4PERP374m70OkW2pbiWmgwBL5nJb6voZUbC0jcSuVxniEbOv%2bzYCXgXp991v0hKOlTZI%2bpXY2kHmgn1Ejrvc6pLAtZ0b8HbmGLSQNsgwKX%2bQsm2iiDDpyDEv0LBecvBV7UWNzOGGoH%2fbumVruIxj39gBpCswCwHn6PnrQRUdGgNCLM9v%2fNUTBW32uKofNUoKn0i%2f7QEhApZqIlOMifDKbLbOrs%2fO0jL8U0GgFWpByRUFI34HADb%2flt75wYd4k%2fy6vzEohPlqDbGeZadUNX8uDEX639RjZN6uAXcWNWGuVNmqZyAe0LH6BNu1SXeYBrsTbHH9h9OOD0e7OnD5p6A7kCQOOUIAPaukEkY31%2fC2FFFJJNrullDdpRN5cfmXu1sa7QabZmqQCzT1UCLFg%3d%3d&Button1=Button&ddlcardtype=&x_card_num=&x_card_code=&x_first_name=&x_last_name=&ddlmonth=&ddlyear=&eo_version=11.0.20.2&eo_style_keys=%2fwFk
+QueryString: orderid=1096
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:28.0) Gecko/20100101 Firefox/28.0
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: True
+Message: Oh no!
+Source: App_Web_bxrc0hr0
+TargetSite: Void Button1_Click(System.Object, System.EventArgs)
+StackTrace:    at CreditCardPayment.Button1_Click(Object sender, EventArgs e) in F:\InetPub\wwwroot\AuthNetWebService\MeridianSecure\CreditCardPayment.aspx.vb:line 557
+   at System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 8/8/2014 10:23 AM
+URL: http://localhost:62723/AuthNetWebService/MeridianSecure/PoPay.aspx
+Form: 
+QueryString: 
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: True
+Message: F:\InetPub\wwwroot\AuthNetWebService\MeridianSecure\PoPay.aspx.vb(26): error BC30451: 'x_first_name' is not declared. It may be inaccessible due to its protection level.
+Source: System.Web
+TargetSite: System.Web.Compilation.BuildResult CompileWebFile(System.Web.VirtualPath)
+StackTrace:    at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+
+
+Time of Error: 8/8/2014 10:23 AM
+URL: http://localhost:62723/AuthNetWebService/MeridianSecure/PoPay.aspx
+Form: 
+QueryString: 
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: True
+Message: F:\InetPub\wwwroot\AuthNetWebService\MeridianSecure\PoPay.aspx.vb(26): error BC30451: 'x_first_name' is not declared. It may be inaccessible due to its protection level.
+Source: System.Web
+TargetSite: System.Web.Compilation.BuildResult CompileWebFile(System.Web.VirtualPath)
+StackTrace:    at System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+
+
+Time of Error: 8/8/2014 10:24 AM
+URL: http://localhost:62723/AuthNetWebService/MeridianSecure/PoPay.aspx
+Form: 
+QueryString: 
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: True
+Message: F:\InetPub\wwwroot\AuthNetWebService\MeridianSecure\PoPay.aspx.vb(26): error BC30451: 'x_first_name' is not declared. It may be inaccessible due to its protection level.
+Source: System.Web
+TargetSite: System.Web.Compilation.BuildResult CompileWebFile(System.Web.VirtualPath)
+StackTrace:    at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+
+
+Time of Error: 8/8/2014 10:24 AM
+URL: http://localhost:62723/AuthNetWebService/MeridianSecure/PoPay.aspx
+Form: 
+QueryString: 
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: True
+Message: F:\InetPub\wwwroot\AuthNetWebService\MeridianSecure\PoPay.aspx.vb(35): error BC30429: 'End Sub' must be preceded by a matching 'Sub'.
+Source: System.Web
+TargetSite: System.Web.Compilation.BuildResult CompileWebFile(System.Web.VirtualPath)
+StackTrace:    at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+
+
+
+Time of Error: 8/9/2014 9:56 PM
+URL: http://localhost:62723/AuthNetWebService/MeridianSecure/PoPay.aspx?schcode=124708
+Form: __EVENTTARGET=ccsubmit&__EVENTARGUMENT=&__LASTFOCUS=&__VIEWSTATE=%2fwEPDwULLTE3NTA4MjMyMzMPZBYEAgEPFgIeBXN0eWxlBRF0b3A6NjAlO2xlZnQ6NTUlO2QCAw9kFgwCBQ8PFgIeBFRleHQFGEdSRUVOIFJJREdFIEhJR0ggU0NIT09MMWRkAgcPDxYCHwEFCFBPIEJveCA3ZGQCCQ8PFgIfAQUVR1JFRU4gUklER0UsTU8gNjUzMzItZGQCCw8QZGQWAWZkAh0PZBYCAgsPEGRkFgFmZAIfDw9kDw8UKwABFgYeBE5hbWUFCEBzY2hjb2RlHgxEZWZhdWx0VmFsdWUFBjEyNDcwOB4OUGFyYW1ldGVyVmFsdWVkFCsBAQIDZGRkkiCmLTUJxoUF%2bg7IxEF%2bqAsoWy7HZSyK5b%2ftrFCZVKI%3d&__EVENTVALIDATION=%2fwEdACeNvBl4sWpJc9AjgnMpv1ScS7LT3JygXhkzplN%2fn8RAvdfkxN3uyDUHSR4MthcAO62GqxajZ9XeYcnwdKzT%2fJyto%2bmwogPtXJu%2faVeDDAfZnqUEFsqcpZ3Ad6dr0g7pD4l8voVCAa%2bDkkROy9MmLNm2wsQHZSgtak0GckVf30r3B77AXZoL7phnxH3ABHxWMojstZ9ZLowT5aZF7vi7kTbOCu7xU4X4Eh5l7NO4c50FC7bTRRnbtqCij1Ur1lKRpFwX%2bq0yxT5vHlI9XkM%2fAAenqmjm86DZmVlYd1wPpsN2aXCfhzUeop5%2bO3gPyyIK97vEUc%2b17M4EbXeFeufDqXqaU2XmXFK6PeSCvsfYfmxYVQ1%2b4K%2fnCs2x77fapRZmb84ONV0TxEJ9HuhMIrboLk2TnHgW4k7oz4tmjhvh5QGgl1Dx7mODxET9%2b%2bJu9DpFtqW4lpoMAS%2bZyW%2br6GVGwtI3ErlcZ4hGzr%2fs2Al4F6ffdb9ISjpU2SPqV2NpB5oJ9RI673OqSwLWdG%2fB25hi0kDbIMCl%2fkLJtoogw6cgxL9CwXnLwVe1FjczhhqB%2f27pla7iMY9%2fYAaQrMAsB5%2bj560EVHRoDQizPb%2fzVEwVt9riqHzVKCp9Iv%2b0BIQKWaiJTjInwymy2zq7PztIy%2fFNBoBVqQckVBSN%2bBwA2%2f5be%2bcGHeJP8ur8xKIT5ag2xnmWnVDV%2fLgxF%2bt%2fUY2TergF3FjVhrlTZqmcgHtCx%2bgTbtUl3mAa7E2xx%2fYfTjg9Huzpw%2bYjd4JhwAFOmpZr8dYHkn2kqHq6SXr3iwEuz%2byOdweAQ0qrXcZ90gsvgnnqwz5y24pbRxCw5FqIsqgF2OsL%2fesHzdTxDug287L9iiry8A2OXw%3d%3d&hfschcode=124708&hfpaytype=CC&rbpaytype=CC&txtamount=1.00&txtemail=randy%40woodalldevelopment.com&x_card_num=4012888818888&x_card_code=123&x_first_name=Randy&x_last_name=Woodall&ddlmonth=11&ddlyear=2020
+QueryString: schcode=124708
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: True
+Message: The operation has timed out
+Source: System
+TargetSite: System.IO.Stream GetRequestStream(System.Net.TransportContext ByRef)
+StackTrace:    at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at submission.Capture(AuthReq request) in F:\InetPub\wwwroot\AuthNetWebService\App_Code\submission.vb:line 88
+   at PoPay.ccsubmit_Click(Object sender, EventArgs e) in F:\InetPub\wwwroot\AuthNetWebService\MeridianSecure\PoPay.aspx.vb:line 124
+   at System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 8/10/2014 7:04 AM
+URL: http://localhost:62723/AuthNetWebService/MeridianSecure/PoPay.aspx
+Form: 
+QueryString: 
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: True
+Message: Object reference not set to an instance of an object.
+Source: App_Web_qsrp4ttj
+TargetSite: Void Page_Load(System.Object, System.EventArgs)
+StackTrace:    at PoPay.Page_Load(Object sender, EventArgs e) in F:\InetPub\wwwroot\AuthNetWebService\MeridianSecure\PoPay.aspx.vb:line 40
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 8/10/2014 7:05 AM
+URL: http://localhost:62723/AuthNetWebService/MeridianSecure/PoPay.aspx
+Form: 
+QueryString: 
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: True
+Message: Object reference not set to an instance of an object.
+Source: App_Web_qsrp4ttj
+TargetSite: Void Page_Load(System.Object, System.EventArgs)
+StackTrace:    at PoPay.Page_Load(Object sender, EventArgs e) in F:\InetPub\wwwroot\AuthNetWebService\MeridianSecure\PoPay.aspx.vb:line 40
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 8/10/2014 8:36 AM
+URL: http://localhost:62723/AuthNetWebService/MeridianSecure/receipt1.aspx
+Form: 
+QueryString: 
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: True
+Message: String reference not set to an instance of a String.
+Parameter name: input
+Source: mscorlib
+TargetSite: Void SetFailure(ParseFailureKind, System.String, System.Object, System.String)
+StackTrace:    at System.Globalization.TimeSpanParse.TimeSpanResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument, String failureArgumentName)
+   at System.Globalization.TimeSpanParse.TryParseTimeSpan(String input, TimeSpanStandardStyles style, IFormatProvider formatProvider, TimeSpanResult& result)
+   at System.Globalization.TimeSpanParse.Parse(String input, IFormatProvider formatProvider)
+   at System.TimeSpan.Parse(String s)
+   at Receipt1.Page_Load(Object sender, EventArgs e) in F:\InetPub\wwwroot\AuthNetWebService\MeridianSecure\Receipt1.aspx.vb:line 15
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 8/10/2014 9:14 AM
+URL: http://localhost:62723/AuthNetWebService/MeridianSecure/PoPay.aspx?schcode=124708
+Form: __EVENTTARGET=ccsubmit&__EVENTARGUMENT=&__LASTFOCUS=&__VIEWSTATE=%2fwEPDwULLTEzNzEzMDQ2NDAPZBYEAgEPFgIeBXN0eWxlBRF0b3A6NjAlO2xlZnQ6NTUlO2QCAw9kFg4CBQ8PFgIeBFRleHQFGEdSRUVOIFJJREdFIEhJR0ggU0NIT09MMWRkAgcPDxYCHwEFCFBPIEJveCA3ZGQCCQ8PFgIfAQUVR1JFRU4gUklER0UsTU8gNjUzMzItZGQCCw8QZGQWAWZkAh0PZBYCAgsPEGRkFgFmZAIfDw9kDw8UKwABFgYeBE5hbWUFCEBzY2hjb2RlHgxEZWZhdWx0VmFsdWUFBjEyNDcwOB4OUGFyYW1ldGVyVmFsdWVkFCsBAQIDZGQCIQ8PZA9kPCsADgEABQxOQUlBQUFBQUFBQT1kZBMw6p6nfTI%2bUKd%2b%2bquqkSi8NOs1I2hQKIbIWpEl5MEc&__SCROLLPOSITIONX=0&__SCROLLPOSITIONY=552&__EVENTVALIDATION=%2fwEdACf7QEIrLix7EIoHfHIR1J8pS7LT3JygXhkzplN%2fn8RAvdfkxN3uyDUHSR4MthcAO62GqxajZ9XeYcnwdKzT%2fJyto%2bmwogPtXJu%2faVeDDAfZnqUEFsqcpZ3Ad6dr0g7pD4l8voVCAa%2bDkkROy9MmLNm2wsQHZSgtak0GckVf30r3B77AXZoL7phnxH3ABHxWMojstZ9ZLowT5aZF7vi7kTbOCu7xU4X4Eh5l7NO4c50FC7bTRRnbtqCij1Ur1lKRpFwX%2bq0yxT5vHlI9XkM%2fAAenqmjm86DZmVlYd1wPpsN2aXCfhzUeop5%2bO3gPyyIK97vEUc%2b17M4EbXeFeufDqXqaU2XmXFK6PeSCvsfYfmxYVQ1%2b4K%2fnCs2x77fapRZmb84ONV0TxEJ9HuhMIrboLk2TnHgW4k7oz4tmjhvh5QGgl1Dx7mODxET9%2b%2bJu9DpFtqW4lpoMAS%2bZyW%2br6GVGwtI3ErlcZ4hGzr%2fs2Al4F6ffdb9ISjpU2SPqV2NpB5oJ9RI673OqSwLWdG%2fB25hi0kDbIMCl%2fkLJtoogw6cgxL9CwXnLwVe1FjczhhqB%2f27pla7iMY9%2fYAaQrMAsB5%2bj560EVHRoDQizPb%2fzVEwVt9riqHzVKCp9Iv%2b0BIQKWaiJTjInwymy2zq7PztIy%2fFNBoBVqQckVBSN%2bBwA2%2f5be%2bcGHeJP8ur8xKIT5ag2xnmWnVDV%2fLgxF%2bt%2fUY2TergF3FjVhrlTZqmcgHtCx%2bgTbtUl3mAa7E2xx%2fYfTjg9Huzpw%2bYjd4JhwAFOmpZr8dYHkn2kqHq6SXr3iwEuz%2byOdweAQ0qrXcZ90gsvgnnqwz5y24qhjc3Co59v0EuFWjeK1cR64f9jV538EiKBhefI6YKeyw%3d%3d&hfschcode=124708&hfpaytype=CC&rbpaytype=CC&txtamount=1.00&txtemail=randy%40woodalldevelopment.com&x_card_num=4012888818888&x_card_code=123&x_first_name=Randy&x_last_name=woodall&ddlmonth=11&ddlyear=2019&eo_version=11.0.20.2&eo_style_keys=%2fwFk
+QueryString: schcode=124708
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: True
+Message: An operation was attempted on something that is not a socket 64.94.118.151:443
+Source: System
+TargetSite: Void DoConnect(System.Net.EndPoint, System.Net.SocketAddress)
+StackTrace:    at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+
+
+
+
+Time of Error: 8/10/2014 9:25 AM
+URL: http://localhost:62723/AuthNetWebService/MeridianSecure/PoPay.aspx?schcode=124708
+Form: __EVENTTARGET=ccsubmit&__EVENTARGUMENT=&__LASTFOCUS=&__VIEWSTATE=%2fwEPDwULLTEzNzEzMDQ2NDAPZBYEAgEPFgIeBXN0eWxlBRF0b3A6NjAlO2xlZnQ6NTUlO2QCAw9kFgwCBQ8PFgIeBFRleHQFGEdSRUVOIFJJREdFIEhJR0ggU0NIT09MMWRkAgcPDxYCHwEFCFBPIEJveCA3ZGQCCQ8PFgIfAQUVR1JFRU4gUklER0UsTU8gNjUzMzItZGQCCw8QZGQWAWZkAh0PZBYCAgsPEGRkFgFmZAIfDw9kDw8UKwABFgYeBE5hbWUFCEBzY2hjb2RlHgxEZWZhdWx0VmFsdWUFBjEyNDcwOB4OUGFyYW1ldGVyVmFsdWVkFCsBAQIDZGRktYubIVE1DU1QosHuplOl4HXqDE5oMf9UnSZjATwAK5g%3d&__SCROLLPOSITIONX=0&__SCROLLPOSITIONY=331&__EVENTVALIDATION=%2fwEdACcUNK%2bQULQftSzHZWFMV6%2bBS7LT3JygXhkzplN%2fn8RAvdfkxN3uyDUHSR4MthcAO62GqxajZ9XeYcnwdKzT%2fJyto%2bmwogPtXJu%2faVeDDAfZnqUEFsqcpZ3Ad6dr0g7pD4l8voVCAa%2bDkkROy9MmLNm2wsQHZSgtak0GckVf30r3B77AXZoL7phnxH3ABHxWMojstZ9ZLowT5aZF7vi7kTbOCu7xU4X4Eh5l7NO4c50FC7bTRRnbtqCij1Ur1lKRpFwX%2bq0yxT5vHlI9XkM%2fAAenqmjm86DZmVlYd1wPpsN2aXCfhzUeop5%2bO3gPyyIK97vEUc%2b17M4EbXeFeufDqXqaU2XmXFK6PeSCvsfYfmxYVQ1%2b4K%2fnCs2x77fapRZmb84ONV0TxEJ9HuhMIrboLk2TnHgW4k7oz4tmjhvh5QGgl1Dx7mODxET9%2b%2bJu9DpFtqW4lpoMAS%2bZyW%2br6GVGwtI3ErlcZ4hGzr%2fs2Al4F6ffdb9ISjpU2SPqV2NpB5oJ9RI673OqSwLWdG%2fB25hi0kDbIMCl%2fkLJtoogw6cgxL9CwXnLwVe1FjczhhqB%2f27pla7iMY9%2fYAaQrMAsB5%2bj560EVHRoDQizPb%2fzVEwVt9riqHzVKCp9Iv%2b0BIQKWaiJTjInwymy2zq7PztIy%2fFNBoBVqQckVBSN%2bBwA2%2f5be%2bcGHeJP8ur8xKIT5ag2xnmWnVDV%2fLgxF%2bt%2fUY2TergF3FjVhrlTZqmcgHtCx%2bgTbtUl3mAa7E2xx%2fYfTjg9Huzpw%2bYjd4JhwAFOmpZr8dYHkn2kqHq6SXr3iwEuz%2byOdweAQ0qrXcZ90gsvgnnqwz5y24q4ITR7ETwBn2JU5OTvn%2bYPjNMvAu0SJ6bp35SeBJqhLQ%3d%3d&hfschcode=124708&hfpaytype=CC&rbpaytype=CC&txtamount=3.00&txtemail=randy%40woodalldevelopment.com&x_card_num=4012888818888&x_card_code=123&x_first_name=Randy&x_last_name=woodall&ddlmonth=10&ddlyear=2021&eo_version=11.0.20.2&eo_style_keys=%2fwFk
+QueryString: schcode=124708
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: True
+Message: The specified string is not in the form required for an e-mail address.
+Source: System
+TargetSite: Int32 ReadCfwsAndThrowIfIncomplete(System.String, Int32)
+StackTrace:    at System.Net.Mail.MailAddressParser.ReadCfwsAndThrowIfIncomplete(String data, Int32 index)
+   at System.Net.Mail.MailAddressParser.ParseDomain(String data, Int32& index)
+   at System.Net.Mail.MailAddressParser.ParseAddress(String data, Boolean expectMultipleAddresses, Int32& index)
+   at System.Net.Mail.MailAddressParser.ParseAddress(String data)
+   at System.Net.Mail.MailAddress..ctor(String address, String displayName, Encoding displayNameEncoding)
+   at System.Net.Mail.MailAddress..ctor(String address, String displayName)
+   at PoPay.CSEmailReceipt() in F:\InetPub\wwwroot\AuthNetWebService\MeridianSecure\PoPay.aspx.vb:line 323
+   at PoPay.ccsubmit_Click(Object sender, EventArgs e) in F:\InetPub\wwwroot\AuthNetWebService\MeridianSecure\PoPay.aspx.vb:line 135
+   at System.Web.UI.WebControls.Button.OnClick(EventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 8/11/2014 9:20 AM
+URL: http://localhost:62723/AuthNetWebService/MeridianSecure/PoPay.aspx
+Form: 
+QueryString: 
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: True
+Message: Object reference not set to an instance of an object.
+Source: App_Web_aexuwj12
+TargetSite: Void Page_Load(System.Object, System.EventArgs)
+StackTrace:    at PoPay.Page_Load(Object sender, EventArgs e) in F:\InetPub\wwwroot\AuthNetWebService\MeridianSecure\PoPay.aspx.vb:line 41
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 8/24/2014 10:06 AM
+URL: http://localhost:62723/AuthNetWebService/MeridianSecure/PoPay.aspx
+Form: 
+QueryString: 
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: True
+Message: Object reference not set to an instance of an object.
+Source: App_Web_5jjxfrvv
+TargetSite: Void Page_Load(System.Object, System.EventArgs)
+StackTrace:    at PoPay.Page_Load(Object sender, EventArgs e) in F:\InetPub\wwwroot\AuthNetWebService\MeridianSecure\PoPay.aspx.vb:line 41
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 8/24/2014 10:07 AM
+URL: http://localhost:62723/AuthNetWebService/MeridianSecure/PoPay.aspx
+Form: 
+QueryString: 
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:31.0) Gecko/20100101 Firefox/31.0
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: True
+Message: Object reference not set to an instance of an object.
+Source: App_Web_5jjxfrvv
+TargetSite: Void Page_Load(System.Object, System.EventArgs)
+StackTrace:    at PoPay.Page_Load(Object sender, EventArgs e) in F:\InetPub\wwwroot\AuthNetWebService\MeridianSecure\PoPay.aspx.vb:line 41
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+

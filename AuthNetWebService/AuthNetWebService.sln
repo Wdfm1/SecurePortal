@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AuthNetWebService", ".", "{EA5CA970-7B90-4606-8FA8-77EABB50E0A8}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/AuthNetWebService"
+		Debug.AspNetCompiler.PhysicalPath = "..\AuthNetWebService\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\AuthNetWebService\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/AuthNetWebService"
+		Release.AspNetCompiler.PhysicalPath = "..\AuthNetWebService\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\AuthNetWebService\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "53236"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "online-pay", "..\online-pay\", "{7851A074-5C26-4D89-8222-0341ACC2DF11}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/online-pay"
+		Debug.AspNetCompiler.PhysicalPath = "..\online-pay\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\online-pay\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/online-pay"
+		Release.AspNetCompiler.PhysicalPath = "..\online-pay\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\online-pay\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "62960"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MeridianOrders", "..\meridian\MeridianOrders\", "{B65D43DB-3A85-427F-91A9-12BFA99C1E0A}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/MeridianOrders"
+		Debug.AspNetCompiler.PhysicalPath = "..\meridian\MeridianOrders\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\MeridianOrders\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/MeridianOrders"
+		Release.AspNetCompiler.PhysicalPath = "..\meridian\MeridianOrders\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\MeridianOrders\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49275"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA5CA970-7B90-4606-8FA8-77EABB50E0A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA5CA970-7B90-4606-8FA8-77EABB50E0A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7851A074-5C26-4D89-8222-0341ACC2DF11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7851A074-5C26-4D89-8222-0341ACC2DF11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B65D43DB-3A85-427F-91A9-12BFA99C1E0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B65D43DB-3A85-427F-91A9-12BFA99C1E0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
