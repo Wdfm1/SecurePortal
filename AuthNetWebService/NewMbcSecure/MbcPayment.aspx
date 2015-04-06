@@ -375,7 +375,7 @@ Month:&nbsp;
 </div>
 <div class="formDivs" style="text-align:center">
     <asp:Button ID="ccsubmit" runat="server" Text="Submit Payment" Width="119px" 
-        style="height: 26px" ValidationGroup="gv1" 
+        style="height: 26px" UseSubmitBehavior="False" ValidationGroup="gv1" 
          onclientclick="showoverlay()" />
     <br>
     Please only click the button once.
@@ -448,18 +448,25 @@ Email Address for receipt to be sent:<br>
     <span class="error_text"><asp:RequiredFieldValidator ID="rfEmail" runat="server" 
               ControlToValidate="email1" ErrorMessage="Email address is required"></asp:RequiredFieldValidator></span>
 </div>
-
+<div class="formCont">
+	<div class="col-md-7 formCont" align="right">
+     <asp:Label ID="Label11" runat="server" 
+                    Text="Contacting payment portal. Please be patient." 
+            Font-Bold="True" ForeColor="Black" style="display:none" ></asp:Label>
+	</div>
+	<div class="col-md-1 formCont" align="center">
+     <asp:Image ID="Image1" runat="server" style="display:none" ImageUrl="~/images/loading.gif" /></div>
+</div>
 <div class="formDivs">
 <asp:HiddenField ID="x_echeck_type" 
                   runat="server" Value="WEB" />
-            
             <asp:HiddenField 
               ID="x_method" runat="server" Value="ECHECK" /> 
             <asp:HiddenField ID="x_recurring_billing" runat="server" Value="FALSE" />
             <asp:HiddenField ID="x_relay_response" runat="server" Value="FALSE" />
             <asp:HiddenField ID="x_delim_data" runat="server" Value="TRUE" />
             <asp:Button ID="Button2" runat="server" Text="Submit Payment" Width="119px" 
-        style="height: 26px" />
+        style="height: 26px" UseSubmitBehavior="False" />
         <br />
         Please only click the button once</div> 
            </asp:Panel>

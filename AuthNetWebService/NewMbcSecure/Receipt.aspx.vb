@@ -4,19 +4,17 @@ Imports MySql.Data
 Imports MySql.Data.MySqlClient
 Imports System.Net.Mail
 Imports System.IO
-Imports System.Net
 
+Imports System.Net
 Partial Class receipt
     Inherits EmailReadyPage
     Private okToSendMarkup As Boolean = False
-    Dim lbltotal As Label
     Protected Overrides Sub Render(ByVal writer As System.Web.UI.HtmlTextWriter)
         'oktosendmarkup is set to false
         If okToSendMarkup Then
             ' EmailReceipt()
         End If
-        Dim orderid As Integer = Request.QueryString("orderid")
-        SetTotal(orderid)
+
 
         MyBase.Render(writer)
         ' ALTERNATE OPTION:
@@ -40,13 +38,14 @@ Partial Class receipt
         Dim thefirstformview As String = SB.ToString
         SB.Clear()
 
-        'gv1.AllowPaging = False
-        'gv1.RenderControl(htmlTW)
-        'lvItems.RenderControl(htmlTW)
-        'Dim thegrid As String = SB.ToString 'now a  list view left variable name the same
-        'SB.Clear()
-        Dim orderitems As String
-       
+        gv1.AllowPaging = False
+        gv1.RenderControl(htmlTW)
+        Dim thegrid As String = SB.ToString
+        SB.Clear()
+
+        FormView2.RenderControl(htmlTW)
+        Dim thesecondformview As String = SB.ToString
+        SB.Clear()
 
 
         'Now, send the email
@@ -73,7 +72,7 @@ Partial Class receipt
 
 
         tomail = Trim(email)
-        'tomail = "randy@woodalldevelopment.com"
+
 
 
 
@@ -97,9 +96,8 @@ Partial Class receipt
 
         'Set the subject
         objMM.Subject = "Receipt for a Parent Payment to Memory Book Company (Transaction Id " & transid & ")  Using " & paytype & "  " & Now
-        orderitems = GetOrderItems(orderid)
-        objMM.Body = "<div>" & thefirstformview & "</div><br /><div>" & orderitems & "</div>"
 
+        objMM.Body = "<div>" & thefirstformview & "</div><div>" & thegrid & "</div><div>" & thesecondformview & "</div>"
 
         Dim smtp As New SmtpClient(smtpclient)
         smtp.Credentials = New NetworkCredential(cuser, cpassword)
@@ -107,8 +105,8 @@ Partial Class receipt
         Try
             'smtp.DeliveryMethod = SmtpDeliveryMethod.PickupDirectoryFromIis 'only works on some servers
 
-            smtp.Send(objMM)
-            MsgBox1.Show("Email Sent", "An email receipt has been sent to " & tomail & ".", Nothing, New EO.Web.MsgBoxButton("OK"))
+			smtp.Send(objMM)
+			MsgBox1.Show("Email Sent", "An email receipt has been sent to " & tomail & ".", Nothing, New EO.Web.MsgBoxButton("OK"))
         Catch ex As Exception
             WriteToFile("exception")
             'Dim handler As New XC.Web.ErrorHandler(Nothing)
@@ -141,114 +139,115 @@ Partial Class receipt
 
 
     End Sub
-    Private Sub CSReceipt()
+	Private Sub CSReceipt()
+		
+				Dim email As String = ""
+				Dim transid As String = ""
+				Dim paytype As String = ""
+				Dim orderid As String = Request.QueryString("orderid")
+				'Dim cart As Cart = Session("Cart")
+				'Save the position of the DataGrid in the myForm Controls collection
+				Dim SB As New StringBuilder()
+				Dim SW As New StringWriter(SB)
+				Dim htmlTW As New HtmlTextWriter(SW)
+				FormView1.RenderControl(htmlTW)
+				Dim thefirstformview As String = SB.ToString
+				SB.Clear()
 
-        Dim email As String = ""
-        Dim transid As String = ""
-        Dim paytype As String = ""
-        Dim orderid As String = Request.QueryString("orderid")
-        'Dim cart As Cart = Session("Cart")
-        'Save the position of the DataGrid in the myForm Controls collection
-        Dim SB As New StringBuilder()
-        Dim SW As New StringWriter(SB)
-        Dim htmlTW As New HtmlTextWriter(SW)
-        FormView1.RenderControl(htmlTW)
-        Dim thefirstformview As String = SB.ToString
-        SB.Clear()
+				gv1.AllowPaging = False
+				gv1.RenderControl(htmlTW)
+				Dim thegrid As String = SB.ToString
+				SB.Clear()
 
-        'gv1.AllowPaging = False
-        'gv1.RenderControl(htmlTW)
-        lvItems.RenderControl(htmlTW)
-        Dim thegrid As String = SB.ToString 'now a  list view left variable name the same
-        SB.Clear()
-
-
-
-
-        'Now, send the email
-        'Create an instance of the MailMessage class
-        Dim objMM As New MailMessage()
-        Dim tomail As String = ""
-        Dim smtpclient As String = ""
-        Dim cpassword As String = ""
-        Dim cuser As String = ""
-
-        Try
-            Dim lblemail As Label = FormView1.FindControl("lblemail")
-            email = lblemail.Text
-            Dim lbltransid As Label = FormView1.FindControl("lbltransactionid")
-            transid = lbltransid.Text
-            Dim lblpaytype As Label = FormView1.FindControl("lblpaytype")
-            paytype = lblpaytype.Text
-        Catch ex As Exception
-
-        End Try
+				FormView2.RenderControl(htmlTW)
+				Dim thesecondformview As String = SB.ToString
+				SB.Clear()
 
 
-        tomail = Trim(email)
-        tomail = "randy@woodalldevelopment.com"
+				'Now, send the email
+				'Create an instance of the MailMessage class
+				Dim objMM As New MailMessage()
+				Dim tomail As String = ""
+				Dim smtpclient As String = ""
+				Dim cpassword As String = ""
+				Dim cuser As String = ""
+
+				Try
+					Dim lblemail As Label = FormView1.FindControl("lblemail")
+					email = lblemail.Text
+					Dim lbltransid As Label = FormView1.FindControl("lbltransactionid")
+					transid = lbltransid.Text
+					Dim lblpaytype As Label = FormView1.FindControl("lblpaytype")
+					paytype = lblpaytype.Text
+				Catch ex As Exception
+
+				End Try
 
 
-
-        smtpclient = ConfigurationManager.AppSettings("smtpserver")
-        cuser = ConfigurationManager.AppSettings("smtpuser")
-        cpassword = ConfigurationManager.AppSettings("smtppassword")
-        'Set the properties
-        objMM.From = New MailAddress(ConfigurationManager.AppSettings("FromAddr"), ConfigurationManager.AppSettings("FromName"))
-
-        Try
-            objMM.To.Add("authnet@memorybook.com") 'cs address if address bad try statement in send will catch
-            'objMM.To.Add("randy@woodalldevelopment.com")
-
-        Catch ex As Exception
-
-        End Try
-        'Send the email in text format
-        objMM.IsBodyHtml = True
-        'Set the subject
-        objMM.Subject = "Receipt for a Parent Payment to Memory Book Company (Transaction Id " & transid & ")  Using " & paytype & "  " & Now
-        Dim useragent As String = Request.UserAgent
-        Dim servername As String = Request.UserHostName.ToString
-        Dim ip As String = Request.UserHostAddress
-        Dim url As String = Request.Url.ToString
-        Dim prevurl As String
-        Try
-            prevurl = Request.UrlReferrer.ToString
-        Catch ex As Exception
-            prevurl = ""
-        End Try
-        Dim servervars As String = Request.ServerVariables.ToString
-        Dim authenication As String = Request.IsAuthenticated.ToString
-        Dim crawler As String = Request.Browser.Crawler.ToString
-        Dim msg As String = "<table class=style1 width=400>" _
-        & "<tr><td align=center colspan=2 style=font-size: xx-large>Data</td></tr> <tr><td align=right bgcolor=#CCCCCC class=style5>" _
-          & " User Agent:</td><td class=style3>" & useragent & "</td></tr><tr> <td align=right bgcolor=#CCCCCC class=style5> Host Name:</td>" _
-          & "<td class=style3>" & servername & "</td></tr> <tr> <td align=right bgcolor=#CCCCCC class=style5>Host Ip Address:</td>" _
-          & " <td class=style3>" & ip & "</td> </tr> <tr> <td align=right bgcolor=#CCCCCC class=style5> URL:</td> <td class=style3>" _
-          & url & "</td> </tr> <tr><td align=right bgcolor=#CCCCCC class=style5>Prev URL:</td><td class=Style3>" _
-          & prevurl & "</td> </tr> <tr><td align=right bgcolor=#CCCCCC class=style5>Authenication:</td><td class=style3>" _
-          & authenication & "</td></tr><tr><td align=right bgcolor=#CCCCCC class=style5> Server Variables:</td> <td class=style3>" _
-          & "</td></tr><tr><td>Crawler:</td><td>" & crawler & "</td></tr></table>"
-
-        objMM.Body = "<div>" & thefirstformview & "</div><div>" & thegrid & "</div><br/><br/><br/><br/>" & msg
-
-        Dim smtp As New SmtpClient(smtpclient)
-        smtp.Credentials = New NetworkCredential(cuser, cpassword)
-
-        Try
-            'smtp.DeliveryMethod = SmtpDeliveryMethod.PickupDirectoryFromIis 'only works on some servers
-
-            smtp.Send(objMM)
-            SetCsEmailTrue()
-        Catch ex As Exception
+				tomail = Trim(email)
 
 
 
-        Finally
 
-        End Try
+				smtpclient = ConfigurationManager.AppSettings("smtpserver")
+				cuser = ConfigurationManager.AppSettings("smtpuser")
+				cpassword = ConfigurationManager.AppSettings("smtppassword")
+				'Set the properties
+				objMM.From = New MailAddress(ConfigurationManager.AppSettings("FromAddr"), ConfigurationManager.AppSettings("FromName"))
 
-    End Sub
+				Try
+			objMM.To.Add("authnet@memorybook.com") 'cs address if address bad try statement in send will catch
+			'objMM.To.Add("randy@woodalldevelopment.com")
+
+				Catch ex As Exception
+
+				End Try
+				'Send the email in text format
+				objMM.IsBodyHtml = True
+				'Set the subject
+				objMM.Subject = "Receipt for a Parent Payment to Memory Book Company (Transaction Id " & transid & ")  Using " & paytype & "  " & Now
+				Dim useragent As String = Request.UserAgent
+				Dim servername As String = Request.UserHostName.ToString
+				Dim ip As String = Request.UserHostAddress
+				Dim url As String = Request.Url.ToString
+				Dim prevurl As String
+				Try
+					prevurl = Request.UrlReferrer.ToString
+				Catch ex As Exception
+					prevurl = ""
+				End Try
+				Dim servervars As String = Request.ServerVariables.ToString
+				Dim authenication As String = Request.IsAuthenticated.ToString
+				Dim crawler As String = Request.Browser.Crawler.ToString
+		Dim msg As String = "<table class=style1 width=400>" _
+		& "<tr><td align=center colspan=2 style=font-size: xx-large>Data</td></tr> <tr><td align=right bgcolor=#CCCCCC class=style5>" _
+		  & " User Agent:</td><td class=style3>" & useragent & "</td></tr><tr> <td align=right bgcolor=#CCCCCC class=style5> Host Name:</td>" _
+		  & "<td class=style3>" & servername & "</td></tr> <tr> <td align=right bgcolor=#CCCCCC class=style5>Host Ip Address:</td>" _
+		  & " <td class=style3>" & ip & "</td> </tr> <tr> <td align=right bgcolor=#CCCCCC class=style5> URL:</td> <td class=style3>" _
+		  & url & "</td> </tr> <tr><td align=right bgcolor=#CCCCCC class=style5>Prev URL:</td><td class=Style3>" _
+		  & prevurl & "</td> </tr> <tr><td align=right bgcolor=#CCCCCC class=style5>Authenication:</td><td class=style3>" _
+		  & authenication & "</td></tr><tr><td align=right bgcolor=#CCCCCC class=style5> Server Variables:</td> <td class=style3>" _
+		  & "</td></tr><tr><td>Crawler:</td><td>" & crawler & "</td></tr></table>"
+
+				objMM.Body = "<div>" & thefirstformview & "</div><div>" & thegrid & "</div><div>" & thesecondformview & "</div><br/><br/><br/><br/>" & msg
+
+				Dim smtp As New SmtpClient(smtpclient)
+				smtp.Credentials = New NetworkCredential(cuser, cpassword)
+
+				Try
+					'smtp.DeliveryMethod = SmtpDeliveryMethod.PickupDirectoryFromIis 'only works on some servers
+
+					smtp.Send(objMM)
+					SetCsEmailTrue()
+				Catch ex As Exception
+
+
+
+				Finally
+
+				End Try
+			
+	End Sub
     Private Sub WriteToFile(sText As String)
         Dim sPath As String = HttpContext.Current.Server.MapPath("Error.txt")
         Try
@@ -262,76 +261,76 @@ Partial Class receipt
     End Sub
 
     Protected Sub Page_Load(sender As Object, e As System.EventArgs) Handles Me.Load
-        LoadLic()
-        Dim orderid As Integer = Request.QueryString("orderid")
-        If orderid = Nothing Then
+		LoadLic()
+		Dim orderid As Integer = Request.QueryString("orderid")
+                If orderid = Nothing Then
             Response.Redirect("http://www.memorybook.com")
         End If
-        If Not IsPostBack Then
-            If IsNothing(Session("syslog")) Then
-                '0,0=Browser
-                '01=platform
-                '02=  IP Address
-                '03= Pament Page first access Datetime
-                '04= submit button clicked Datetime
-                Dim syslog(0, 4) As String
-                syslog(0, 0) = Context.Request.Browser.Browser & " " & Request.Browser.Version
-                syslog(0, 1) = Context.Request.Browser.Platform
-                syslog(0, 2) = Context.Request.UserHostAddress
-                syslog(0, 3) = DateTime.Now.ToString()
-                Session.Add("syslog", syslog)
-                InsertSyslog(orderid)
-            End If
-        End If
-        Dim CSemailed As Boolean = CheckIfEmailed()
+		If Not IsPostBack Then
+			If IsNothing(Session("syslog")) Then
+				'0,0=Browser
+				'01=platform
+				'02=  IP Address
+				'03= Pament Page first access Datetime
+				'04= submit button clicked Datetime
+				Dim syslog(0, 4) As String
+				syslog(0, 0) = Context.Request.Browser.Browser & " " & Request.Browser.Version
+				syslog(0, 1) = Context.Request.Browser.Platform
+				syslog(0, 2) = Context.Request.UserHostAddress
+				syslog(0, 3) = DateTime.Now.ToString()
+				Session.Add("syslog", syslog)
+				InsertSyslog(orderid)
+			End If
+		End If
+		Dim CSemailed As Boolean = CheckIfEmailed()
         'type determine if email is sent when receipt page is accessed
 
 
         If Not IsPostBack Then
-            If CSemailed = False Then
-                CSReceipt()
-            End If
+			If CSemailed = False Then
+				CSReceipt()
+			End If
 
 
-        End If
+		End If
 
-    End Sub
-    Private Function CheckIfEmailed() As Boolean
-        Dim dvSql As New DataView
-        Dim drvSql As DataRowView
-        Dim a As Integer
-        Dim sstring As String = dsorder.SelectCommand
-        Dim retval As Boolean = False
-        dsorder.SelectCommand = "SELECT distinct csemailed FROM orders  WHERE orderid=@orderid;"
-        dsorder.SelectParameters.Clear()
-        dsorder.SelectParameters.Add("@orderid", Request.QueryString("orderid"))
-        Try
-            dvSql = CType(Me.dsorder.Select(DataSourceSelectArguments.Empty), Data.DataView)
-            For Each drvSql In dvSql 'only one record
-                a = drvSql("csemailed")
-                If a = 0 Then
-                    retval = False
-                ElseIf a = 1 Then
-                    retval = True
-                End If
-            Next
-        Catch ex As Exception
+	End Sub
+	Private Function CheckIfEmailed() As Boolean
+		Dim dvSql As New DataView
+		Dim drvSql As DataRowView
+		Dim a As Integer
+		Dim sstring As String = dsorder.SelectCommand
+		Dim retval As Boolean = False
+		dsorder.SelectCommand = "SELECT distinct csemailed FROM orders  WHERE orderid=@orderid;"
+		dsorder.SelectParameters.Clear()
+		dsorder.SelectParameters.Add("@orderid", Request.QueryString("orderid"))
+		Try
+			dvSql = CType(Me.dsorder.Select(DataSourceSelectArguments.Empty), Data.DataView)
+			For Each drvSql In dvSql 'only one record
+				a = drvSql("csemailed")
+				If a = 0 Then
+					retval = False
+				ElseIf a = 1 Then
+					retval = True
+				End If
+			Next
+		Catch ex As Exception
 
-        End Try
-        dsorder.SelectCommand = sstring
-        Return retval
-    End Function
-    Protected Sub SetCsEmailTrue()
-        dsorder.UpdateCommand = "update orders set csemailed=1 where orderid=@orderid;"
-        dsorder.UpdateParameters.Add("@orderid", Request.QueryString("orderid"))
-        Try
-            dsorder.Update()
+		End Try
+		dsorder.SelectCommand = sstring
+		Return retval
+	End Function
+	Protected Sub SetCsEmailTrue()
+		dsorder.UpdateCommand = "update orders set csemailed=1 where orderid=@orderid;"
+		dsorder.UpdateParameters.Add("@orderid", Request.QueryString("orderid"))
+		Try
+			dsorder.Update()
 
-        Catch ex As Exception
+		Catch ex As Exception
 
-        End Try
+		End Try
 
-    End Sub
+	End Sub
     Private Sub LoadLic()
         EO.Web.Runtime.AddLicense( _
          "b/8goVnt6QMe6KjlwbPcsGenprHavUaBpLHLn1mXpLHn4J3bpAUk7560puQX" + _
@@ -371,14 +370,14 @@ Partial Class receipt
     End Sub
 
     Protected Sub LinkButton1_Click(sender As Object, e As System.EventArgs) Handles LinkButton1.Click
-        EmailReceipt()
+		EmailReceipt()
 
-    End Sub
-    Protected Sub InsertSyslog(orderid As Integer)
-        '0,0=Browser
-        '01=platform
-        '02=  IP Address
-        '03= Pament Page first access Datetime
+	End Sub
+	Protected Sub InsertSyslog(orderid As Integer)
+		'0,0=Browser
+		'01=platform
+		'02=  IP Address
+		'03= Pament Page first access Datetime
         '04= submit button clicked Datetime
         Try
             Dim strconn As String
@@ -407,98 +406,8 @@ Partial Class receipt
 
         End Try
 
-    End Sub
-    Protected Sub lbltotal_init(sender As Object, e As EventArgs)
-        lbltotal = sender
-
-    End Sub
-    Private Function SetTotal(orderid As Integer) As String
-        Dim strconn As String
-        Dim total As Decimal
 
 
-        strconn = dsorder.ConnectionString
-        Dim conn As MySqlConnection = New MySqlConnection(strconn)
-        Dim cmd As New MySqlCommand("", conn)
-        cmd.CommandText = "SELECT sum(itemtotal) FROM orders where orderid=" & orderid & ";"
 
-        Try
-            cmd.Connection.Open()
-            total = cmd.ExecuteScalar() 'get the highest orderid in order table
-            lbltotal.Text = total
-            'txttotal.Text = total + 1	 Use in year 16 1 added per order for processing
-        Catch ex As Exception
-            lbltotal.Text = "0.00"   'all rows deleted returns dbnull
-        End Try
-        Return lbltotal.Text
-    End Function
-    Private Function GetOrderItems(orderid As String) As String
-        Dim dvSql As New DataView
-        Dim drvSql As DataRowView
-        Dim itemqty, studentlname, studentfname, booktype, teacher, grade, perstext1, cap, cap1, htmlcode, itemrows As String
-        Dim itemtotal, itemamount As Decimal
-        Dim total As String = SetTotal(CInt(orderid))
-        Dim a As Integer = 0
-        Dim sb As New StringBuilder
-        dvSql = CType(Me.dsorder.Select(DataSourceSelectArguments.Empty), Data.DataView)
-        For Each drvSql In dvSql
-            a = a + 1
-            itemqty = drvSql("itemqty")
-            studentlname = drvSql("studentlname")
-            studentfname = drvSql("studentfname")
-            booktype = drvSql("booktype")
-            teacher = drvSql("teacher")
-            grade = drvSql("grade")
-            perstext1 = IIf(IsDBNull(drvSql("perstext1")), "", drvSql("perstext1"))
-            cap = drvSql("cap")
-            cap1 = drvSql("cap1")
-            itemtotal = drvSql("itemtotal")
-            itemamount = drvSql("itemamount")
-            Select Case (a Mod 2)
-                Case 1 'white
-                    itemrows = "<tr>" _
-                         & "<td rowspan=""2"">" & itemqty & " @ <br />" & itemamount.ToString & "</td>" _
-                & "<td >" & studentfname & " " & studentlname & "</td>" _
-                & "<td >" & teacher & "</td>" _
-                & "<td colspan=""2"">" & perstext1 & "</td>" _
-                & "<td style=""text-align :right"">" & itemtotal.ToString & "</td></tr>" _
-                & " <tr>" _
-                & "<td>" & booktype & "</td>" _
-                & "<td>" & grade & "</td>" _
-                & "<td colspan=""2"" style=""font-size: 6px"" >" & cap & "<br />" & cap1 & "</td>" _
-                & "<td>&nbsp;</td>" _
-                & "</tr>"
-
-                Case 0 'gray or alt row
-                    itemrows = "<tr style=background-color:gainsboro; >" _
-                                             & "<td rowspan=""2"">" & itemqty & " @ <br />" & itemamount.ToString & "</td>" _
-                                    & "<td >" & studentfname & " " & studentlname & "</td>" _
-                                    & "<td >" & teacher & "</td>" _
-                                    & "<td colspan=""2"">" & perstext1 & "</td>" _
-                                    & "<td style=""text-align :right"">" & itemtotal.ToString & "</td></tr>" _
-                                    & " <tr  style=""background-color:gainsboro;"">" _
-                                    & "<td>" & booktype & "</td>" _
-                                    & "<td>" & grade & "</td>" _
-                                    & "<td colspan=""2"" style=""font-size: 6px"" >" & cap & "<br />" & cap1 & "</td>" _
-                                    & "<td>&nbsp;</td>" _
-                                    & "</tr>"
-            End Select
-            sb.Append(itemrows)
-
-        Next
-        htmlcode = "<table cellpadding=""0"" cellspacing=""0"" style='border-style: solid;font-size:smaller;width:760px; border-spacing: 0px'> " _
-            & "<tr id=""rowheader"" style=""border-style:none; border-color: #C0C0C0; background-color: #800000; color:#ffffff;"">" _
-                & "<td >Qty</td>" _
-                & "<td>Student\Book Type</td>" _
-                & "<td>Teacher\Grade</td>" _
-                & "<td colspan=""2"">Line1Text\Icons</td>" _
-                & "<td>Item Total</td> </tr>" _
-                & sb.ToString _
-                & "<tr id=""rowfooter"">" _
-                & "<td colspan=""4"">&nbsp;</td>" _
-                & "<td colspan=""2"" style=""text-align:right"" >Total:" & total & "</td> </tr></table>"
-
-
-        Return htmlcode
-    End Function
+	End Sub
 End Class

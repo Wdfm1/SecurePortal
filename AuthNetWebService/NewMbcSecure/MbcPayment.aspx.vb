@@ -218,17 +218,17 @@ Partial Public Class MbcPayment
 		End If 'is valid
 
 	End Sub
-    Protected Sub ecsubmit_Click(sender As Object, e As EventArgs)
+	Protected Sub ecsubmit_Click(sender As Object, e As EventArgs)
 
-        If CheckForOrder() Then  'duplicate found
-            Dim a As String = Session("duporder")
-            MsgBox1.Show("Possible Duplicate", a, Nothing, New EO.Web.MsgBoxButton("Yes", "", "ecyessubmit"), New EO.Web.MsgBoxButton("No", "", "nosubmit"))
-            Session.Remove("duporder")
-        Else 'no duplicates go on
-            StartECSubmission()
-        End If
-
-    End Sub
+		If CheckForOrder() Then	 'duplicate found
+			Dim a As String = Session("duporder")
+			MsgBox1.Show("Possible Duplicate", a, Nothing, New EO.Web.MsgBoxButton("Yes", "", "ecyessubmit"), New EO.Web.MsgBoxButton("No", "", "nosubmit"))
+			Session.Remove("duporder")
+		Else 'no duplicates go on
+			StartECSubmission()
+		End If
+		
+	End Sub
 	Protected Sub StartECSubmission()
 		Page.Validate()
 		Dim someScript1 As String = "alertMe"

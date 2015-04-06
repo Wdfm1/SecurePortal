@@ -9,7 +9,7 @@ Public Class SchoolPay
         LoadLic()
         'resets the overlay div for this page
         Page.Response.AppendHeader("Cache-Control", "no-store, no-cache, must-revalidate, post-check=0, pre-check=0")
-        Me.light.Attributes.Add("style", "top:60%;left:55%;")
+        'Me.light.Attributes.Add("style", "top:60%;left:55%;")
 
         If Not IsPostBack Then
             Session.Add("Company", "MBC")
@@ -61,7 +61,7 @@ Public Class SchoolPay
         Page.Validate()
         Dim someScript1 As String = "alertMe"
         If Page.IsValid = False Then
-            ''turns off overlay that was startd with onclient click
+            'turns off overlay that was startd with onclient click
             If (Not ClientScript.IsStartupScriptRegistered(Me.GetType(), someScript1)) Then
                 ClientScript.RegisterStartupScript(Me.GetType(), someScript1, "<script 'javascript'>javascript:void(0)</script>")
             End If
@@ -233,7 +233,7 @@ Public Class SchoolPay
         Page.Validate()
         Dim someScript1 As String = "alertMe"
         If Page.IsValid = False Then
-            ''turns off overlay that was startd with onclient click
+            'turns off overlay that was startd with onclient click
             If (Not ClientScript.IsStartupScriptRegistered(Me.GetType(), someScript1)) Then
                 ClientScript.RegisterStartupScript(Me.GetType(), someScript1, "<script 'javascript'>javascript:void(0)</script>")
             End If

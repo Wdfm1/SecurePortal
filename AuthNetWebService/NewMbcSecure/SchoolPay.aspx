@@ -278,16 +278,6 @@ overflow: auto;
     <![endif]-->
     </head>
 <body background-color="#333" link="blue">
-  
-    <div runat="server" id="light" class="white_content"> 
-    <asp:Label ID="Label5" runat="server" 
-   Text="Contacting payment portal. Please be patient." 
-            Font-Bold="True" ForeColor="Black" style="display:none" ></asp:Label> 
-   <asp:Image ID="Image2" runat="server" style="display:none"
-        ImageUrl="~/MBCSecure/Images/loading.gif" Height="62px" Width="74px" /><br /><br />
-                  </div>
-
-<div id="fade" class="black_overlay"></div>
 <div id="pageZZ">
 <div class="code_contain">
     <div class="hidden-xs headerASP">
@@ -312,7 +302,7 @@ overflow: auto;
 </div>
   <asp:RadioButtonList ID="rbpaytype" runat="server" 
         RepeatDirection="Horizontal" AutoPostBack="True">
-        <asp:ListItem Selected="True" Value="CC">Pay With Credit Card</asp:ListItem>
+        <asp:ListItem Selected="True" Value="CC">Pay With Credit Card</asp:ListItem>&nbsp;&nbsp;
         <asp:ListItem Value="EC">Pay With E-Check</asp:ListItem>
     </asp:RadioButtonList>
 <div class="formContHolder">
@@ -329,9 +319,6 @@ overflow: auto;
               ControlToValidate="txtemail" Display="Dynamic" 
               ErrorMessage="Email Address is Required" Font-Bold="True" 
               validationgroup="gv1" EnableClientScript="False"></asp:RequiredFieldValidator>
-             <asp:CustomValidator ID="cvamount" runat="server" ControlToValidate="txtamount" 
-                 Display="Dynamic" Font-Bold="True">Do not use currency symbols or Seperators.</asp:CustomValidator>
-  
 </div>
 <div class="col-md-11 formCont">
 <asp:Label ID="Label6" runat="server" Text="Email Address:"></asp:Label>
@@ -358,6 +345,8 @@ overflow: auto;
 	<img src="Images/mc_accpt_023_gif.jpg" alt="Master Card" height="20" border="0" />
 	<img src="Images/discover.jpg" alt="Discover" border="0" style="width: 36px; height: 20px" />
 	<img src="Images/pay_logo_amex.gif" alt="Amerex" width="33" height="20" border="0" />
+    <asp:CustomValidator ID="cvamount" runat="server" ControlToValidate="txtamount" 
+                 Display="Dynamic" Font-Bold="True">Do not use currency symbols or Seperators.</asp:CustomValidator>
 </div>
 <div style="clear:left; height:0px"></div>
 
