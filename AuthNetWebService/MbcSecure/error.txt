@@ -23773,3 +23773,141 @@ StackTrace:    at System.Web.SessionState.OutOfProcSessionStateStore.MakeRequest
 
 
 
+Time of Error: 4/6/2015 2:26 PM
+URL: http://localhost:57461/MbcSecure/receipt.aspx?orderid=38199
+Form: 
+QueryString: orderid=38199
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: False
+Message: The DataSourceID of 'lvItems' must be the ID of a control of type IDataSource.  A control with ID 'dsorders' could not be found.
+Source: System.Web
+TargetSite: System.Web.UI.IDataSource GetDataSource()
+StackTrace:    at System.Web.UI.WebControls.DataBoundControl.GetDataSource()
+   at System.Web.UI.WebControls.DataBoundControl.ConnectToDataSourceView()
+   at System.Web.UI.WebControls.DataBoundControl.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 4/6/2015 2:39 PM
+URL: http://localhost:57461/MbcSecure/receipt.aspx?orderid=38199
+Form: 
+QueryString: orderid=38199
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: False
+Message: Object reference not set to an instance of an object.
+Source: App_Web_4fdgp1qv
+TargetSite: System.String SetTotal(Int32)
+StackTrace:    at receipt.SetTotal(Int32 orderid) in F:\InetPub\wwwroot\SecurePortral\AuthNetWebService\MbcSecure\Receipt.aspx.vb:line 408
+   at receipt.GetOrderItems(String orderid) in F:\InetPub\wwwroot\SecurePortral\AuthNetWebService\MbcSecure\Receipt.aspx.vb:line 417
+   at receipt.CSReceipt() in F:\InetPub\wwwroot\SecurePortral\AuthNetWebService\MbcSecure\Receipt.aspx.vb:line 207
+   at receipt.Page_Load(Object sender, EventArgs e) in F:\InetPub\wwwroot\SecurePortral\AuthNetWebService\MbcSecure\Receipt.aspx.vb:line 269
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 4/6/2015 2:48 PM
+URL: http://localhost:57461/MbcSecure/receipt.aspx?orderid=38199
+Form: 
+QueryString: orderid=38199
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: False
+Message: Object reference not set to an instance of an object.
+Source: App_Web_5kos20sx
+TargetSite: System.String SetTotal(Int32)
+StackTrace:    at receipt.SetTotal(Int32 orderid) in F:\InetPub\wwwroot\SecurePortral\AuthNetWebService\MbcSecure\Receipt.aspx.vb:line 408
+   at receipt.GetOrderItems(String orderid) in F:\InetPub\wwwroot\SecurePortral\AuthNetWebService\MbcSecure\Receipt.aspx.vb:line 417
+   at receipt.CSReceipt() in F:\InetPub\wwwroot\SecurePortral\AuthNetWebService\MbcSecure\Receipt.aspx.vb:line 207
+   at receipt.Page_Load(Object sender, EventArgs e) in F:\InetPub\wwwroot\SecurePortral\AuthNetWebService\MbcSecure\Receipt.aspx.vb:line 269
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 4/6/2015 2:51 PM
+URL: http://localhost:57461/MbcSecure/receipt.aspx?orderid=38199
+Form: 
+QueryString: orderid=38199
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: False
+Message: Object reference not set to an instance of an object.
+Source: App_Web_5kos20sx
+TargetSite: System.String SetTotal(Int32)
+StackTrace:    at receipt.SetTotal(Int32 orderid) in F:\InetPub\wwwroot\SecurePortral\AuthNetWebService\MbcSecure\Receipt.aspx.vb:line 408
+   at receipt.GetOrderItems(String orderid) in F:\InetPub\wwwroot\SecurePortral\AuthNetWebService\MbcSecure\Receipt.aspx.vb:line 417
+   at receipt.CSReceipt() in F:\InetPub\wwwroot\SecurePortral\AuthNetWebService\MbcSecure\Receipt.aspx.vb:line 207
+   at receipt.Page_Load(Object sender, EventArgs e) in F:\InetPub\wwwroot\SecurePortral\AuthNetWebService\MbcSecure\Receipt.aspx.vb:line 269
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 4/6/2015 3:18 PM
+URL: http://localhost:57461/MbcSecure/receipt.aspx?orderid=38199
+Form: 
+QueryString: orderid=38199
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: False
+Message: The DataSourceID of 'lvItems' must be the ID of a control of type IDataSource.  A control with ID 'dsorders' could not be found.
+Source: System.Web
+TargetSite: System.Web.UI.IDataSource GetDataSource()
+StackTrace:    at System.Web.UI.WebControls.DataBoundControl.GetDataSource()
+   at System.Web.UI.WebControls.DataBoundControl.ConnectToDataSourceView()
+   at System.Web.UI.WebControls.DataBoundControl.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+
+Time of Error: 4/6/2015 3:23 PM
+URL: http://localhost:57461/MbcSecure/receipt.aspx?orderid=38199
+Form: 
+QueryString: orderid=38199
+Server Name: localhost
+User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.118 Safari/537.36
+User IP: ::1
+User Host Name: ::1
+User is Authenticated: False
+Message: The DataSourceID of 'lvItems' must be the ID of a control of type IDataSource.  A control with ID 'dsorders' could not be found.
+Source: System.Web
+TargetSite: System.Web.UI.IDataSource GetDataSource()
+StackTrace:    at System.Web.UI.WebControls.DataBoundControl.GetDataSource()
+   at System.Web.UI.WebControls.DataBoundControl.ConnectToDataSourceView()
+   at System.Web.UI.WebControls.DataBoundControl.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+

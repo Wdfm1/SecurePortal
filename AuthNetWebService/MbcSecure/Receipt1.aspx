@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Default.aspx.vb" Inherits="_Default" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Receipt1.aspx.vb" Inherits="MbcSecure_Receipt1" %>
 
 <!DOCTYPE html>
 
@@ -41,7 +41,7 @@
 	font-size: 30px;
 	font-weight: normal;
 	color: #666;
-	width: 95%;
+	width: 98%;
 	text-decoration: none;
 	font-family: "Open Sans", Arial, sans-serif;
 }
@@ -58,6 +58,21 @@
 	width: 95%;
 	text-decoration: none;
 	font-family: "Open Sans", Arial, sans-serif;
+}
+.pay_sidebar {
+	width:266px;
+	background-image:url(online-pay/new_look/sidebar.jpg);
+	height:697px;
+	background-repeat:no-repeat;
+	display:block;
+	float:left
+}
+.pay_contain {
+	width:800px;
+	height:697px;
+	background-repeat:no-repeat;
+	display:block;
+	float:left
 }
 .code_contain {
 	width:100%;
@@ -79,11 +94,47 @@
 	padding-bottom:8px;
 	font-family: "Open Sans", Arial, sans-serif;
 }
+.formDivsTITLE {
+	padding-left: 20px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	font-style: oblique;
+}
 .formDivsBottom {
 	padding-left:20px;
 	padding-top:8px;
 	padding-bottom:20px;
 	font-family: "Open Sans", Arial, sans-serif;
+}
+.formContHolder {
+	width:100%;
+}
+.formCont {
+	padding-left:20px;
+	padding-top:8px;
+	padding-bottom:8px;
+	font-family: "Open Sans", Arial, sans-serif;
+}
+.formCont30 {
+	padding-left:20px;
+	padding-top:8px;
+	padding-bottom:8px;
+	font-family: "Open Sans", Arial, sans-serif;
+	width:30%;
+	float:left;
+	display:block;
+}
+.formCont50 {
+	padding-left:20px;
+	padding-top:8px;
+	padding-bottom:8px;
+	font-family: "Open Sans", Arial, sans-serif;
+	width:50%;
+	float:left;
+	display:block;
 }
     body,td,th {
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -91,11 +142,46 @@
     body {
 	background-color: #E5E4E4;
 }
+.redtext {
+	font-size: 10pt;
+	font-style: normal;
+	line-height: 12pt;
+	color: #C00;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.Green_Text_NEW {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: bold;
+	font-variant: normal;
+	color: #060;
+	text-decoration: none;
+	float: left;
+	width: 100%;
+	padding-top:6px;
+	padding-bottom:6px;
+	padding-left:20px;
+}
 .error_text {
 	font-family: "Open Sans", Arial, sans-serif;
 	list-style:none;
 	color:#E80F12;
 	font-weight:bold;
+}
+.loginBox {
+	background-color: #DEDFE3;
+	max-width: 400px;
+	padding: 1em;
+	border-radius: 1em;
+	text-align: right;
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	border: 2px solid #666;
+}
+.name_password {
+	padding:.5em;
 }
 </style>
 <script src="new_look/modernizr.js"></script>
@@ -114,53 +200,27 @@
     <a href="http://memorybook.com/"><img src="new_look/headbig.jpg" alt="Memory Book Header" width="90%" border="0" /></a></div>
     <div class="visible-xs headerASP"><img src="new_look/logo-1.png" width="70%" alt="" style="margin-top:1em"/></div>
 <form id="form1" runat="server">
-	<div class="hidden-xs headline">
-	  <asp:Label ID="lblpaytype" runat="server" >School Payment Page</asp:Label>
-	</div>
-    <div class="visible-xs headline2">School Payment Page
-	</div>
-<div class="formDivs">
-        <asp:HyperLink ID="h1" runat="server" Font-Size="14px" 
-        NavigateUrl="~/Default1.aspx">HyperLink</asp:HyperLink>
-        <br />
-    <br />
-    Enter your pay code in the textbox below and click next to proceed.
+<div class="formDivsTITLE">
+  <asp:Label
+      ID="lblschname" runat="server" Font-Bold="True" Font-Italic="True" 
+        Font-Size="Large" ForeColor="Black"></asp:Label>
+  <asp:Label
+      ID="Label10" runat="server" Font-Bold="True" Font-Italic="True" 
+        Font-Size="Large" ForeColor="Black">PAY SITE</asp:Label>
 </div>
-<!--Get unit code from sending html form -->
-<div class="formDivs">
-<!-- (c) 2005, 2013. Authorize.Net is a registered trademark of CyberSource Corporation -->
-			<asp:TextBox ID="CustomerCode" runat="server" Width="124px" MaxLength="6" 
-                      CausesValidation="True" style="height: 22px" 
-       EnableViewState="False"></asp:TextBox>
-             &nbsp;&nbsp;
-        </li>
-        <asp:RequiredFieldValidator 
-                      ControlToValidate="CustomerCode" 
-                      ErrorMessage="Code is required" ID="RequiredFieldValidator1" 
-        runat="server" precondition="error_text"></asp:RequiredFieldValidator>
-			<asp:CustomValidator ID="cv11" runat="server" 
-				ErrorMessage="You are on School Pay. Requires a 6 digit code." 
-				ControlToValidate="CustomerCode"></asp:CustomValidator>
+	<div class="hidden-xs headline">Payments</div>
+    <div class="visible-xs headline2">Payments</div>
+
+<div style="clear:left"></div>
+<div class="formContHolder">
+<div class="formDivs" style="padding-bottom:5em; text-align:center">
+               <%Response.Write(Session("ordermessage")) %>&nbsp;    
+                    Please print this information for your records.    
+</div>
+<div style="clear:left"></div>
+
 
 </div>
-
-<div class="formDivs"> <font color="red"><%Response.Write(Session("defaulterrormessage"))%></font></div>
-<div class="formDivs">
-<asp:LinkButton runat="server" ID="lbspanish" ForeColor="Blue">(Haga clic en para la versión en español)</asp:LinkButton>  
-</div>
-
-<br />
-<div class="formDivs">
-	<asp:Button ID="Button1" runat="server" Text="Next" style="width:100px" OnClick="Button1_Click" />
-</div>
-<div class="formDivsBottom">
-If you have any questions about ordering your yearbook contact your school's yearbook advisor.
-</div>    
-                 <asp:SqlDataSource ID="cus11" runat="server" 
-                    ConnectionString="<%$ ConnectionStrings:mbcConnectionString %>" 
-                    ProviderName="<%$ ConnectionStrings:mbcConnectionString.ProviderName %>" 
-                    SelectCommand="SELECT cust.* FROM cust">
-      </asp:SqlDataSource>
 </form>
 </div>
 <div class="page_footer"> Memory Book Company • © Copyright 2015 • All rights reserved</div>

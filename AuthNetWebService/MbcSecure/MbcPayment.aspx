@@ -1,4 +1,5 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="echeck.aspx.vb" Inherits="echeck" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" Codefile="MbcPayment.aspx.vb" Inherits="MbcPayment" %>
+<%@ Register assembly="EO.Web" namespace="EO.Web" tagprefix="eo" %>
 
 <!DOCTYPE html>
 
@@ -9,10 +10,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-<title>Pay by eCheck</title>
+<title>Payments</title>
     <!-- Bootstrap core CSS -->
     <link href="new_look/bootstrap.min.css" rel="stylesheet">
 <style type="text/css">
+.black_overlay
+{
+
+display:none;
+position: absolute;
+top: 0%;
+left: 0%;
+width: 100%;
+height: 250%;
+background-color:black;
+z-index:2001;
+-moz-opacity: 0.1;
+opacity:.10;
+filter: alpha(opacity=10);
+}
+.white_content 
+{
+
+display:none;
+z-index:4;
+position: absolute;
+top: 45%;
+left: 30%;
+width: 500px;
+height:500px;
+padding: 0px;
+text-align:center;
+background-color: transparent;
+z-index:2002;
+overflow: auto;
+}
 #pageZZ {
 	width: 90%;
 	max-width:900px;
@@ -54,6 +86,15 @@
 	width: 95%;
 	text-decoration: none;
 	font-family: "Open Sans", Arial, sans-serif;
+}
+.formDivsTITLE {
+	padding-left: 20px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	font-family: "Open Sans", Arial, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	font-style: oblique;
 }
 .code_contain {
 	width:100%;
@@ -187,14 +228,22 @@
     <![endif]-->
     </head>
 <body background-color="#333" link="blue">
+<div id="fade" class="black_overlay"></div>
 <div id="pageZZ">
 <div class="code_contain">
     <div class="hidden-xs headerASP">
     <a href="http://memorybook.com/"><img src="new_look/headbig.jpg" alt="Memory Book Header" width="90%" border="0" /></a></div>
     <div class="visible-xs headerASP"><img src="new_look/logo-1.png" width="70%" alt="" style="margin-top:1em"/></div>
 <form id="form1" runat="server">
-	<div class="hidden-xs headline">Echeck Payment Page
-	</div>
+<div class="formDivsTITLE">
+  <asp:Label
+      ID="lblschname" runat="server" Font-Bold="True" Font-Italic="True" 
+        Font-Size="Large" ForeColor="Black"></asp:Label>
+  <asp:Label
+      ID="Label10" runat="server" Font-Bold="True" Font-Italic="True" 
+        Font-Size="Large" ForeColor="Black">PAY SITE</asp:Label>
+</div>
+	<div class="hidden-xs headline">Payments </div>
     <div class="visible-xs headline2">Echeck Payment Page
 </div>
 <div class="formDivs">
@@ -202,10 +251,142 @@
  <a href="http://www.authorize.net/" id="AuthorizeNetText" target="_blank">Electronic Commerce</a><br />
 <br /><img src="Images/Verisign-Secured.png" alt="" width="86" height="43"/>
 </div>
-   <span class="redtext"><strong>Check that your School Code and School Name below are correct. If they are not, return to the previous page and carefully re-enter your School Code.</strong></span></div>
-<div class="Green_Text_NEW"><%Response.Write(Session("cAddress"))%></div>
-
+  <asp:RadioButtonList ID="rbpaytype" runat="server" 
+        RepeatDirection="Horizontal" AutoPostBack="True">
+        <asp:ListItem Selected="True" Value="CC">Pay With Credit Card</asp:ListItem>
+        <asp:ListItem Value="EC">Pay With E-Check</asp:ListItem>
+    </asp:RadioButtonList>
+   </div>
+    	<div class="formDivs">
+         <asp:Label ID="Label3" runat="server" Text="Amount To Be Charged:"></asp:Label>&nbsp;&nbsp; 
+         <asp:Label ID="lblamount" runat="server" Text="0.00" Font-Bold="True"></asp:Label> 
+	</div> 
+	<div class="formDivs">
+         <asp:Label ID="Label5" runat="server" Text="Order Id:"></asp:Label>&nbsp;&nbsp;
+         <asp:Label ID="lblorderid" runat="server" Font-Bold="True"></asp:Label></div>
+	<div class="formDivs">
+         <asp:Label ID="Label6" runat="server" Text="Email Address:"></asp:Label>&nbsp;&nbsp;
+         <asp:Label ID="lblemailaddress" runat="server" Font-Bold="True"></asp:Label>
+	</div>
+         <asp:HiddenField ID="hfschcode" runat="server" />
+         <asp:HiddenField ID="hfschinvoicenumber" runat="server" />
+          <asp:HiddenField ID="hfpaytype" runat="server" Value="CC" />
 <div class="formContHolder">
+  <asp:Panel ID="CCPanel" runat="server">
+	<div class="formDivs" style="font-weight:bold">
+<asp:Label ID="Label1" runat="server" Text="Credit Card Information"></asp:Label>
+<span class="formCont">
+
+</span></div>
+<div class="col-md-11 formCont">
+	<img src="Images/visa1_37x23_a.jpg" alt="Visa" height="22" border="0" />
+	<img src="Images/mc_accpt_023_gif.jpg" alt="Master Card" height="20" border="0" />
+	<img src="Images/discover.jpg" alt="Discover" border="0" style="width: 36px; height: 20px" />
+	<img src="Images/pay_logo_amex.gif" alt="Amerex" width="33" height="20" border="0" />
+</div>
+<div style="clear:left; height:0px"></div>
+
+
+
+	<div class="formDivs">
+            Credit Card Number:<br>
+       <asp:TextBox ID="x_card_num" runat="server" Width="130px" MaxLength="16"></asp:TextBox>
+	&nbsp;<span class="error_text"><asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
+          ControlToValidate="x_card_code" ErrorMessage="Enter a card number" 
+            validationgroup="gv1" Display="Dynamic" EnableClientScript="False"></asp:RequiredFieldValidator></span></div>
+            <div class="formDivs">
+Security Code:<br>
+<asp:TextBox ID="x_card_code" runat="server" Width="51px" MaxLength="16"></asp:TextBox>
+&nbsp;<span class="error_text"><asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" 
+          ControlToValidate="x_card_code" ErrorMessage="Enter a security code" 
+            validationgroup="gv1" Display="Dynamic" EnableClientScript="False"></asp:RequiredFieldValidator></span>
+        </div>
+            <div class="formDivs">First Name:<br>
+<asp:TextBox ID="x_first_name" runat="server" Width="200px" CausesValidation="True"></asp:TextBox>&nbsp;
+<span class="error_text"><asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" 
+          ControlToValidate="x_first_name" ErrorMessage="Enter first name" 
+            validationgroup="gv1" Display="Dynamic" EnableClientScript="False"></asp:RequiredFieldValidator></span>
+        </div>
+        <div class="formDivs">
+ Last Name:<br>
+        <asp:TextBox ID="x_last_name" runat="server" Width="200px" 
+             CausesValidation="True"></asp:TextBox>
+       &nbsp;
+<span class="error_text"><asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" 
+          ControlToValidate="x_last_name" ErrorMessage="Enter last name" 
+            ValidationGroup="gv1" Display="Dynamic" EnableClientScript="False"></asp:RequiredFieldValidator></span>       
+    </div>
+            <div class="formDivs">
+Enter Card Expiration Date:<br>
+Month:&nbsp;
+<asp:DropDownList AutoPostBack="True" CssClass="Text" ID="ddlmonth" 
+          runat="server" causesvalidation="True" validationgroup="1">
+        <asp:ListItem></asp:ListItem>
+        <asp:ListItem>01</asp:ListItem>
+        <asp:ListItem>02</asp:ListItem>
+        <asp:ListItem>03</asp:ListItem>
+        <asp:ListItem>04</asp:ListItem>
+        <asp:ListItem>05</asp:ListItem>
+        <asp:ListItem>06</asp:ListItem>
+        <asp:ListItem>07</asp:ListItem>
+        <asp:ListItem>08</asp:ListItem>
+        <asp:ListItem>09</asp:ListItem>
+        <asp:ListItem>10</asp:ListItem>
+        <asp:ListItem>11</asp:ListItem>
+        <asp:ListItem>12</asp:ListItem>
+        </asp:DropDownList>
+&nbsp;
+        <span class="error_text"><asp:RequiredFieldValidator 
+          ControlToValidate="ddlmonth" 
+          ErrorMessage="Enter a month for expiration date" 
+            ID="RequiredFieldValidator8" runat="server" candrag="error_text" 
+            ValidationGroup="gv1" Display="Dynamic" EnableClientScript="False"></asp:RequiredFieldValidator></span>
+            </div>
+<div class="formDivs">Year:&nbsp;
+  <asp:DropDownList AutoPostBack="True" CssClass="Text" ID="ddlyear" 
+          runat="server" causesvalidation="True" validationgroup="1">
+          <asp:ListItem></asp:ListItem>
+            <asp:ListItem>2012</asp:ListItem>
+            <asp:ListItem>2013</asp:ListItem>
+            <asp:ListItem>2014</asp:ListItem>
+            <asp:ListItem>2015</asp:ListItem>
+            <asp:ListItem>2016</asp:ListItem>
+            <asp:ListItem>2017</asp:ListItem>
+            <asp:ListItem>2018</asp:ListItem>
+            <asp:ListItem>2019</asp:ListItem>
+            <asp:ListItem>2020</asp:ListItem>
+            <asp:ListItem>2021</asp:ListItem>
+            <asp:ListItem>2022</asp:ListItem>
+            <asp:ListItem>2023</asp:ListItem>
+        </asp:DropDownList>
+&nbsp;<span class="error_text"><asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" 
+          ControlToValidate="ddlyear" 
+          ErrorMessage="Enter a year for expiration date" ValidationGroup="gv1" 
+            Display="Dynamic" EnableClientScript="False"></asp:RequiredFieldValidator></span>
+</div>
+<div class="formCont">
+	<div class="col-md-7 formCont" align="right">
+     <asp:Label ID="Label11" runat="server" 
+                    Text="Contacting payment portal. Please be patient." 
+            Font-Bold="True" ForeColor="Black" style="display:none" ></asp:Label>
+	</div>
+	<div class="col-md-1 formCont" align="center">
+     <asp:Image ID="Image1" runat="server" style="display:none" ImageUrl="~/images/loading.gif" /></div>
+</div>
+<div class="formDivs" style="text-align:center">
+    <asp:Button ID="ccsubmit" runat="server" Text="Submit Payment" Width="119px" 
+        style="height: 26px" ValidationGroup="gv1" 
+         onclientclick="showoverlay()" />
+    <br>
+    Please only click the button once.
+    </div>
+    </asp:Panel>
+    
+  <asp:Panel ID="ECPanel" runat="server" Visible="False">
+  <div class="formDivs" style="font-weight:bold">
+        <asp:Label ID="Label2" runat="server" Text="E-Check Information" Font-Bold="True" 
+            Font-Size="Large"></asp:Label>
+</div>
 <div class="formDivs">
 Customer's Name (as it appears on bank account):<br>
 <asp:TextBox ID="x_bank_acct_name" runat="server" Width="260px"></asp:TextBox>
@@ -267,28 +448,59 @@ Email Address for receipt to be sent:<br>
     <span class="error_text"><asp:RequiredFieldValidator ID="rfEmail" runat="server" 
               ControlToValidate="email1" ErrorMessage="Email address is required"></asp:RequiredFieldValidator></span>
 </div>
+<%--<div class="formCont">
+	<div class="col-md-7 formCont" align="right">
+     <asp:Label ID="Label11" runat="server" 
+                    Text="Contacting payment portal. Please be patient." 
+            Font-Bold="True" ForeColor="Black" style="display:none" ></asp:Label>
+	</div>
+	<div class="col-md-1 formCont" align="center">
+     <asp:Image ID="Image1" runat="server" style="display:none" ImageUrl="~/images/loading.gif" /></div>
+</div>--%>
 <div class="formDivs">
 <asp:HiddenField ID="x_echeck_type" 
                   runat="server" Value="WEB" />
-            
             <asp:HiddenField 
               ID="x_method" runat="server" Value="ECHECK" /> 
             <asp:HiddenField ID="x_recurring_billing" runat="server" Value="FALSE" />
             <asp:HiddenField ID="x_relay_response" runat="server" Value="FALSE" />
             <asp:HiddenField ID="x_delim_data" runat="server" Value="TRUE" />
             <asp:Button ID="Button2" runat="server" Text="Submit Payment" Width="119px" 
-        style="height: 26px" UseSubmitBehavior="False" />  
-            &nbsp;&nbsp;
-            <asp:SqlDataSource ID="cus11" runat="server" 
-                    ConnectionString="Server=databases;User id=root;Password=3l3phant1;Persist Security Info=True;Database=mbc" 
-                    ProviderName="MySql.Data.MySqlClient" 
-                    SelectCommand="SELECT cust.* FROM cust"> </asp:SqlDataSource>
-</div>
-</div>
+        style="height: 26px" />
+        <br />
+        Please only click the button once</div> 
+           </asp:Panel>
+     <asp:SqlDataSource ID="dsorder" runat="server" 
+        ConnectionString="<%$ ConnectionStrings:MbcConn %>" 
+        ProviderName="<%$ ConnectionStrings:MbcConn.ProviderName %>"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="dstemporders" runat="server" 
+        ConnectionString="<%$ ConnectionStrings:MbcConn %>" 
+        ProviderName="<%$ ConnectionStrings:MbcConn.ProviderName %>"></asp:SqlDataSource>
+        <eo:MsgBox ID="MsgBox1" runat="server" BackColor="#EBEBEB" 
+        CloseButtonUrl="00070301" ControlSkinID="None" HeaderHtml="Dialog Title" 
+        Height="216px" Width="320px">
+            <HeaderStyleActive CssText="padding-right: 3px; padding-left: 8px; font-weight: bold; font-size: 10pt; background-image: url(00020213); padding-bottom: 3px; color: white; padding-top: 0px; font-family: 'trebuchet ms';height:20px;" />
+            <ContentStyleActive CssText="padding-right: 4px; padding-left: 4px; font-size: 8pt; padding-bottom: 4px; padding-top: 4px; font-family: tahoma" />
+            <FooterStyleActive CssText="padding-right: 4px; padding-left: 4px; font-size: 8pt; padding-bottom: 4px; padding-top: 4px; font-family: tahoma" />
+            <BorderImages BottomBorder="00020212" BottomLeftCorner="00020207" 
+                BottomRightCorner="00020208" LeftBorder="00020210" RightBorder="00020211" 
+                TopBorder="00020209" TopLeftCorner="00020201" TopLeftCornerBottom="00020203" 
+                TopLeftCornerRight="00020202" TopRightCorner="00020204" 
+                TopRightCornerBottom="00020206" TopRightCornerLeft="00020205" />
+    </eo:MsgBox>                   
 </form>
 </div>
 <div class="page_footer"> Memory Book Company • © Copyright 2015 • All rights reserved</div>
 </div>
+<script 'javascript'>
+    function showoverlay() {
+        document.getElementById('light').style.display = 'block'; document.getElementById('fade').style.display = 'block';
+        setTimeout('hideoverlay()', 10000);
+    }
+    function hideoverlay() {
+        document.getElementById('light').style.display = 'none'; document.getElementById('fade').style.display = 'none';
+    }
+</script>
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-355460-1']);

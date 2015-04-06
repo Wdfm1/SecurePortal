@@ -302,7 +302,7 @@ overflow: auto;
 </div>
   <asp:RadioButtonList ID="rbpaytype" runat="server" 
         RepeatDirection="Horizontal" AutoPostBack="True">
-        <asp:ListItem Selected="True" Value="CC">Pay With Credit Card</asp:ListItem>&nbsp;&nbsp;
+        <asp:ListItem Selected="True" Value="CC">Pay With Credit Card</asp:ListItem>
         <asp:ListItem Value="EC">Pay With E-Check</asp:ListItem>
     </asp:RadioButtonList>
 <div class="formContHolder">

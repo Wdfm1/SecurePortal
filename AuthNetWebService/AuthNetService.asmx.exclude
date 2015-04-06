@@ -1,1 +1,0 @@
-﻿<%@ WebService Language="VB" CodeBehind="AuthNetService.asmx.vb" Class="AuthNetWebService.Service1" %>

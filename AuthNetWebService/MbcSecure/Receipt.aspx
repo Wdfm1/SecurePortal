@@ -300,7 +300,7 @@ Authorization Code:<asp:Label ID="lblauthcode" runat="server" Font-Bold="True"
 </div>
 <div class="formDivs">
 <!--Listview Starts Here"-->
-   <asp:ListView ID="lvItems" class="shoppingcart" runat="server" DataKeyNames="id" DataSourceID="dsorders">
+   <asp:ListView ID="lvItems" class="shoppingcart" runat="server" DataKeyNames="id" DataSourceID="dsorder">
         <AlternatingItemTemplate>
             <div class="rowAlt">
 		<div class="listcontaino">
@@ -370,15 +370,6 @@ For questions about your yearbook order contact you schools yearbook advisor.<br
 <a href="https://products.memorybook.com/login">Click to order a 2015 graduate banner. The perfect companion to your 2015 yearbook.</a>
 </div>
 <div style="clear:left"></div>
-<div class="formDivs" style="text-align:right">
-<asp:FormView ID="FormView2" runat="server" DataSourceID="dstotal">
-        <ItemTemplate>
-        <asp:Label ID="Label1" runat="server" Text="Total: "></asp:Label>
-        <asp:TextBox ID="txttotal" runat="server" ReadOnly="True" Width="60px" 
-                Text='<%# bind("total") %>'></asp:TextBox>
-        </ItemTemplate>
-    </asp:FormView>
-</div>
 <div class="formDivs" style="text-align:right">
     <asp:LinkButton ID="LinkButton1" runat="server" Font-Bold="True" 
         Font-Size="Medium" ForeColor="Blue">Email Receipt</asp:LinkButton>
